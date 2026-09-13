@@ -1,0 +1,77 @@
+[
+  {
+    "conjunto": "treino",
+    "linhas": 16800,
+    "colunas": [
+      "timestamp",
+      "id_maquina",
+      "idade_equipamento_meses",
+      "id_operador",
+      "turno",
+      "temperatura_c",
+      "vibracao_rms",
+      "pressao",
+      "unidade_pressao",
+      "corrente_a",
+      "rpm",
+      "horas_operacao",
+      "falha_72h"
+    ],
+    "positivos": 1939,
+    "vibracao_ausente": 1217,
+    "unidades_pressao": [
+      "bar",
+      "psi"
+    ]
+  },
+  {
+    "conjunto": "teste",
+    "linhas": 4200,
+    "colunas": [
+      "timestamp",
+      "id_maquina",
+      "idade_equipamento_meses",
+      "id_operador",
+      "turno",
+      "temperatura_c",
+      "vibracao_rms",
+      "pressao",
+      "unidade_pressao",
+      "corrente_a",
+      "rpm",
+      "horas_operacao",
+      "falha_72h"
+    ],
+    "positivos": 655,
+    "vibracao_ausente": 408,
+    "unidades_pressao": [
+      "bar",
+      "psi"
+    ]
+  },
+  {
+    "conjunto": "producao",
+    "linhas": 4200,
+    "colunas": [
+      "timestamp",
+      "id_maquina",
+      "idade_equipamento_meses",
+      "id_operador",
+      "turno",
+      "temperatura_c",
+      "vibracao_rms",
+      "pressao",
+      "unidade_pressao",
+      "corrente_a",
+      "rpm",
+      "horas_operacao",
+      "falha_72h"
+    ],
+    "positivos": 599,
+    "vibracao_ausente": 353,
+    "unidades_pressao": [
+      "bar",
+      "psi"
+    ]
+  }
+]

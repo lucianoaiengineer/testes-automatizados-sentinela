@@ -1,0 +1,38 @@
+[
+  {
+    "caminho": "dados/treino.csv",
+    "esperado": "c451a57533172af5146d06db3272591a21ff4e6af3030c266a593e88bfe6bf56",
+    "obtido": "c451a57533172af5146d06db3272591a21ff4e6af3030c266a593e88bfe6bf56",
+    "confere": true
+  },
+  {
+    "caminho": "dados/teste.csv",
+    "esperado": "73124899eff5e5b0c84ead552f7f73f5739b4723c7815a0dc57d7566797d5830",
+    "obtido": "73124899eff5e5b0c84ead552f7f73f5739b4723c7815a0dc57d7566797d5830",
+    "confere": true
+  },
+  {
+    "caminho": "dados/producao.csv",
+    "esperado": "96c55056c8b89c92348036157dbf6f7b77ed22ca86165a52c77b3400380bf56b",
+    "obtido": "96c55056c8b89c92348036157dbf6f7b77ed22ca86165a52c77b3400380bf56b",
+    "confere": true
+  },
+  {
+    "caminho": "artefatos/modelo_v1.json",
+    "esperado": "1f5fe29a5cbf75bad31c1bdf38c3f6eee8f68bb4c80b86a372ffd90f374ffd6e",
+    "obtido": "1f5fe29a5cbf75bad31c1bdf38c3f6eee8f68bb4c80b86a372ffd90f374ffd6e",
+    "confere": true
+  },
+  {
+    "caminho": "artefatos/modelo_v2.json",
+    "esperado": "cac035ef1d0ab4a75a6e4d2d399fdef46271dde5d58d5d1e84b7686b3026e611",
+    "obtido": "cac035ef1d0ab4a75a6e4d2d399fdef46271dde5d58d5d1e84b7686b3026e611",
+    "confere": true
+  },
+  {
+    "caminho": "artefatos/risco_maquina.json",
+    "esperado": "34c467594843bda41e7fd12c5ae62d3dacf417d94c9d2498ee9cf5e8af493655",
+    "obtido": "34c467594843bda41e7fd12c5ae62d3dacf417d94c9d2498ee9cf5e8af493655",
+    "confere": true
+  }
+]

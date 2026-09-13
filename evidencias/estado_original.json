@@ -1,0 +1,272 @@
+[
+  {
+    "caminho": ".gitignore",
+    "bytes": 86,
+    "sha256": "74fdd4f8c30592ce0a52226c8f110a21c7d7bcede20d8a4c291407a39c02740c"
+  },
+  {
+    "caminho": "conftest.py",
+    "bytes": 317,
+    "sha256": "f0266a3dc7092992b5457e1d9fc42afd643e58979e96c980c60339daea39d48e"
+  },
+  {
+    "caminho": "guia-do-aluno.md",
+    "bytes": 6217,
+    "sha256": "99d58edc928ad177c327daf7f92bb7ba44de8b14441ed08099241bddaaf1a082"
+  },
+  {
+    "caminho": "pyproject.toml",
+    "bytes": 420,
+    "sha256": "53b7c787e1d35021c8c7dcb5d8e51fd8d77770c6f090f394acca018c3b7c61c1"
+  },
+  {
+    "caminho": "README.md",
+    "bytes": 6333,
+    "sha256": "9611e742a6ff27467b496c32c68b87d4e7e2f7dbd7b8ca343ead5edf34f0b7f2"
+  },
+  {
+    "caminho": "requirements.txt",
+    "bytes": 39,
+    "sha256": "5b450545be4649411020a748500fc1eca16161c3a0506a81a6ff3991f49e9a0c"
+  },
+  {
+    "caminho": ".git/config",
+    "bytes": 342,
+    "sha256": "22b59fe6c764aa88cbf834f888272b729fa347db46574c52dde77841b90a7ba9"
+  },
+  {
+    "caminho": ".git/description",
+    "bytes": 73,
+    "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+  },
+  {
+    "caminho": ".git/HEAD",
+    "bytes": 21,
+    "sha256": "28d25bf82af4c0e2b72f50959b2beb859e3e60b9630a5e8c603dad4ddb2b6e80"
+  },
+  {
+    "caminho": ".git/index",
+    "bytes": 2241,
+    "sha256": "331a835907b4a6d049b1acf496058c0503fce8cb0c3cab5fb5d38350b92a327b"
+  },
+  {
+    "caminho": ".git/packed-refs",
+    "bytes": 112,
+    "sha256": "f3de7890c03a3bd4ea5e9de455cecb7262d929af311b664a0d362e966afa8ec5"
+  },
+  {
+    "caminho": ".git/gk/config",
+    "bytes": 61,
+    "sha256": "72a1250b3c25371fe07bbb86b7876cffad6e5ade98ce9bc967a5b38a17e3e404"
+  },
+  {
+    "caminho": ".git/hooks/applypatch-msg.sample",
+    "bytes": 478,
+    "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+  },
+  {
+    "caminho": ".git/hooks/commit-msg.sample",
+    "bytes": 1972,
+    "sha256": "efc1401b0e99d1ff51494d154d98b46c1e99059bcd8bf9f73cecde19fd3eb23b"
+  },
+  {
+    "caminho": ".git/hooks/fsmonitor-watchman.sample",
+    "bytes": 4611,
+    "sha256": "9159720099ad5595b8e66645cbfd47763c1e920f46e0b50ae75e642bbec57ef0"
+  },
+  {
+    "caminho": ".git/hooks/post-update.sample",
+    "bytes": 189,
+    "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+  },
+  {
+    "caminho": ".git/hooks/pre-applypatch.sample",
+    "bytes": 424,
+    "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+  },
+  {
+    "caminho": ".git/hooks/pre-commit.sample",
+    "bytes": 1649,
+    "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b"
+  },
+  {
+    "caminho": ".git/hooks/pre-merge-commit.sample",
+    "bytes": 416,
+    "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+  },
+  {
+    "caminho": ".git/hooks/pre-push.sample",
+    "bytes": 1374,
+    "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+  },
+  {
+    "caminho": ".git/hooks/pre-rebase.sample",
+    "bytes": 4898,
+    "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+  },
+  {
+    "caminho": ".git/hooks/pre-receive.sample",
+    "bytes": 544,
+    "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+  },
+  {
+    "caminho": ".git/hooks/prepare-commit-msg.sample",
+    "bytes": 1492,
+    "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+  },
+  {
+    "caminho": ".git/hooks/push-to-checkout.sample",
+    "bytes": 2783,
+    "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+  },
+  {
+    "caminho": ".git/hooks/sendemail-validate.sample",
+    "bytes": 2308,
+    "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+  },
+  {
+    "caminho": ".git/hooks/update.sample",
+    "bytes": 3650,
+    "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+  },
+  {
+    "caminho": ".git/info/exclude",
+    "bytes": 240,
+    "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+  },
+  {
+    "caminho": ".git/logs/HEAD",
+    "bytes": 194,
+    "sha256": "a0b4aa36c80803355888774690642f07419fa0734e76ca44fe05468f92f6c6d2"
+  },
+  {
+    "caminho": ".git/logs/refs/heads/main",
+    "bytes": 194,
+    "sha256": "a0b4aa36c80803355888774690642f07419fa0734e76ca44fe05468f92f6c6d2"
+  },
+  {
+    "caminho": ".git/logs/refs/remotes/origin/HEAD",
+    "bytes": 194,
+    "sha256": "a0b4aa36c80803355888774690642f07419fa0734e76ca44fe05468f92f6c6d2"
+  },
+  {
+    "caminho": ".git/objects/info/commit-graphs/commit-graph-chain",
+    "bytes": 41,
+    "sha256": "df26491b733e918d025ba679e8423cf452d85e02e8a53cd70ab7feacf5383b81"
+  },
+  {
+    "caminho": ".git/objects/info/commit-graphs/graph-a290fdfa32bfac28f02de74b5bc0e0b281140a9b.graph",
+    "bytes": 1249,
+    "sha256": "309b5287cff8f686f07d7e4f2838b3e58be44855a93027bbc8848e4dbd122e5f"
+  },
+  {
+    "caminho": ".git/objects/pack/pack-758bc35c0bf82a41ab85f10209717ebe621f0d21.idx",
+    "bytes": 1940,
+    "sha256": "8a46598cf86dd56aa0ede1413ba3b2db150327092ef7e6cbc5f90e7495fa147f"
+  },
+  {
+    "caminho": ".git/objects/pack/pack-758bc35c0bf82a41ab85f10209717ebe621f0d21.pack",
+    "bytes": 749656,
+    "sha256": "5b26ef57be7d8b1ba4320debed630cbc298e6dfa7775280997c8ecbc7ff66f53"
+  },
+  {
+    "caminho": ".git/objects/pack/pack-758bc35c0bf82a41ab85f10209717ebe621f0d21.rev",
+    "bytes": 176,
+    "sha256": "14483da95ce74c7de921e97918e3c2625c54d08a1d40456ff0f903088ee02a05"
+  },
+  {
+    "caminho": ".git/refs/heads/main",
+    "bytes": 41,
+    "sha256": "be14a5de4ea5fb2f4281c64515f803659178889eba9fdfd888aac07a6059bc26"
+  },
+  {
+    "caminho": ".git/refs/remotes/origin/HEAD",
+    "bytes": 30,
+    "sha256": "2bb6a24aa0fc6c484100f5d51a29bbad841cd2c755f5d93faa204e5dbb4eb2b4"
+  },
+  {
+    "caminho": "artefatos/manifest.json",
+    "bytes": 669,
+    "sha256": "d7adc989c145b3bd4d72df622a439028a6c9cdce170cabf60c95bbeae8bb6df5"
+  },
+  {
+    "caminho": "artefatos/modelo_v1.json",
+    "bytes": 189801,
+    "sha256": "1f5fe29a5cbf75bad31c1bdf38c3f6eee8f68bb4c80b86a372ffd90f374ffd6e"
+  },
+  {
+    "caminho": "artefatos/modelo_v2.json",
+    "bytes": 549039,
+    "sha256": "cac035ef1d0ab4a75a6e4d2d399fdef46271dde5d58d5d1e84b7686b3026e611"
+  },
+  {
+    "caminho": "artefatos/risco_maquina.json",
+    "bytes": 492,
+    "sha256": "34c467594843bda41e7fd12c5ae62d3dacf417d94c9d2498ee9cf5e8af493655"
+  },
+  {
+    "caminho": "dados/producao.csv",
+    "bytes": 338580,
+    "sha256": "96c55056c8b89c92348036157dbf6f7b77ed22ca86165a52c77b3400380bf56b"
+  },
+  {
+    "caminho": "dados/teste.csv",
+    "bytes": 338317,
+    "sha256": "73124899eff5e5b0c84ead552f7f73f5739b4723c7815a0dc57d7566797d5830"
+  },
+  {
+    "caminho": "dados/treino.csv",
+    "bytes": 1354471,
+    "sha256": "c451a57533172af5146d06db3272591a21ff4e6af3030c266a593e88bfe6bf56"
+  },
+  {
+    "caminho": "exemplos/test_exemplo.py",
+    "bytes": 1468,
+    "sha256": "c9ff8872215421e4c62a6a75058bb8d8faf68d0c573c46441498688a98b455e0"
+  },
+  {
+    "caminho": "scripts/treinar.py",
+    "bytes": 4494,
+    "sha256": "6a8bc69f231861c5a77b52ce2b295a303dfbe82a532bdf30b523eb32dde6ad89"
+  },
+  {
+    "caminho": "src/sentinela/__init__.py",
+    "bytes": 647,
+    "sha256": "edae3b5fa43d77e5f0f96a05c285960444031a3cd4a3426f9d1634f3e905520b"
+  },
+  {
+    "caminho": "src/sentinela/artefatos.py",
+    "bytes": 1517,
+    "sha256": "840e9373134716fd29774e2dfe5d622ce07d56ddf0b63cdbfa60642ae79800c1"
+  },
+  {
+    "caminho": "src/sentinela/avaliacao.py",
+    "bytes": 1561,
+    "sha256": "f328159a0de418e2fe1a8cc4dfb00934ea3213bc78e74afb055b77c2a6978dae"
+  },
+  {
+    "caminho": "src/sentinela/dados.py",
+    "bytes": 958,
+    "sha256": "c116002def8f3226c30bca5488ac3f6876531102610ad3fc12136101c8af9e9f"
+  },
+  {
+    "caminho": "src/sentinela/features.py",
+    "bytes": 4008,
+    "sha256": "c6fec034b0c3090ca324dc52c4d3ae10757733154873f431cb3e3010845f1705"
+  },
+  {
+    "caminho": "src/sentinela/modelo.py",
+    "bytes": 4825,
+    "sha256": "16f87455534f0f7796af2e3af91f4294fe7fcb7ed70af62fe3b79e8224e9fbb1"
+  },
+  {
+    "caminho": "src/sentinela/pipeline.py",
+    "bytes": 1177,
+    "sha256": "b8e29be8bf5f08499b0589deef56849484b40e97e49ccb2e36355cfb25331b29"
+  },
+  {
+    "caminho": "src/sentinela/preprocessamento.py",
+    "bytes": 1473,
+    "sha256": "82c3337405e53d5a9e78864d242432819d71a96c9344fc414a4b8f6a945fe281"
+  }
+]

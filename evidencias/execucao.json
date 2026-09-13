@@ -1,0 +1,891 @@
+{
+  "codigos": {
+    "exemplos": 0,
+    "linha_base": 0,
+    "estatistica": 0,
+    "adversarial": 0,
+    "ruff": 0,
+    "mypy": 0,
+    "pytest": 1
+  },
+  "casos": [
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_medicao_de_mudancas_distingue_abertura_e_cancelamento",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_ruido_termico_respeita_domino_e_mede_sensibilidade[-0.4-v1]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_ruido_termico_respeita_domino_e_mede_sensibilidade[-0.4-v2]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_ruido_termico_respeita_domino_e_mede_sensibilidade[0.4-v1]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_ruido_termico_respeita_domino_e_mede_sensibilidade[0.4-v2]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_permutacao_altera_apenas_uma_feature[temp_media_6h]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_permutacao_altera_apenas_uma_feature[temp_max_24h]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_permutacao_altera_apenas_uma_feature[delta_temp_24h]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_permutacao_altera_apenas_uma_feature[vib_media_6h]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_permutacao_altera_apenas_uma_feature[vib_max_24h]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_permutacao_altera_apenas_uma_feature[corrente_media_6h]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_permutacao_altera_apenas_uma_feature[pressao]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_permutacao_altera_apenas_uma_feature[rpm]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_permutacao_altera_apenas_uma_feature[idade_equipamento_meses]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_permutacao_altera_apenas_uma_feature[horas_operacao]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_permutacao_altera_apenas_uma_feature[maquina_risco]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_permutacao_altera_apenas_uma_feature[operador_senior]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_permutacao_altera_apenas_uma_feature[turno]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_perturbacao_rejeita_magnitude_fora_do_ensaio[0]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_perturbacao_rejeita_magnitude_fora_do_ensaio[1]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_perturbacao_rejeita_magnitude_fora_do_ensaio[-1]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_perturbacao_rejeita_magnitude_fora_do_ensaio[inf]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_adversarial.py",
+      "teste": "test_auxiliares_rejeitam_entradas_sem_significado",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_calibracao.py",
+      "teste": "test_calibracao_perfeita_inclui_probabilidade_um_e_faixas_vazias",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_calibracao.py",
+      "teste": "test_probabilidade_constante_reproduz_frequencia_observada",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_calibracao.py",
+      "teste": "test_varredura_tem_limiar_padrao_e_recall_nao_crescente",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_calibracao.py",
+      "teste": "test_calibracao_rejeita_vetores_invalidos[alvo0-probabilidades0]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_calibracao.py",
+      "teste": "test_calibracao_rejeita_vetores_invalidos[alvo1-probabilidades1]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_calibracao.py",
+      "teste": "test_calibracao_rejeita_vetores_invalidos[alvo2-probabilidades2]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_calibracao.py",
+      "teste": "test_calibracao_rejeita_vetores_invalidos[alvo3-probabilidades3]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_calibracao.py",
+      "teste": "test_calibracao_rejeita_vetores_invalidos[alvo4-probabilidades4]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_calibracao.py",
+      "teste": "test_numero_de_faixas_deve_ser_positivo",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_contrafactual.py",
+      "teste": "test_contrafactual_administrativo_mantem_estado_fisico[v1-id_operador-OP-01-OP-07]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_contrafactual.py",
+      "teste": "test_contrafactual_administrativo_mantem_estado_fisico[v1-turno-1-3]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_contrafactual.py",
+      "teste": "test_contrafactual_administrativo_mantem_estado_fisico[v2-id_operador-OP-01-OP-07]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_contrafactual.py",
+      "teste": "test_contrafactual_administrativo_mantem_estado_fisico[v2-turno-1-3]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_contrafactual.py",
+      "teste": "test_formatacao_do_operador_nao_altera_decisao",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_manifesto_e_estado_original_conferem",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_schema_completude_tipos_e_alvo[treino-16800]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_schema_completude_tipos_e_alvo[teste-4200]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_schema_completude_tipos_e_alvo[producao-4200]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_chave_temporal_unica_e_cadencia_horaria[treino]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_chave_temporal_unica_e_cadencia_horaria[teste]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_chave_temporal_unica_e_cadencia_horaria[producao]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_particoes_temporais_nao_se_sobrepoem",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[temperatura_c-treino]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[temperatura_c-teste]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[temperatura_c-producao]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[vibracao_rms-treino]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[vibracao_rms-teste]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[vibracao_rms-producao]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[pressao-treino]",
+      "resultado": "falhou",
+      "mensagem": "AssertionError: treino/pressao: 5 fora da faixa\nassert not np.True_\n +  where np.True_ = any()\n +    where any = 0        False\\n1        False\\n2        False\\n3        False\\n4        False\\n         ...  \\n16795    False\\n16796    False\\n16797    False\\n16798    False\\n16799    False\\nName: pressao, Length: 16800, dtype: bool.any"
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[pressao-teste]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[pressao-producao]",
+      "resultado": "falhou",
+      "mensagem": "AssertionError: producao/pressao: 1 fora da faixa\nassert not np.True_\n +  where np.True_ = any()\n +    where any = 0       False\\n1       False\\n2       False\\n3       False\\n4       False\\n        ...  \\n4195    False\\n4196    False\\n4197    False\\n4198    False\\n4199    False\\nName: pressao, Length: 4200, dtype: bool.any"
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[corrente_a-treino]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[corrente_a-teste]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[corrente_a-producao]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[rpm-treino]",
+      "resultado": "falhou",
+      "mensagem": "AssertionError: treino/rpm: 4 fora da faixa\nassert not np.True_\n +  where np.True_ = any()\n +    where any = 0        False\\n1        False\\n2        False\\n3        False\\n4        False\\n         ...  \\n16795    False\\n16796    False\\n16797    False\\n16798    False\\n16799    False\\nName: rpm, Length: 16800, dtype: bool.any"
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[rpm-teste]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[rpm-producao]",
+      "resultado": "falhou",
+      "mensagem": "AssertionError: producao/rpm: 1 fora da faixa\nassert not np.True_\n +  where np.True_ = any()\n +    where any = 0       False\\n1       False\\n2       False\\n3       False\\n4       False\\n        ...  \\n4195    False\\n4196    False\\n4197    False\\n4198    False\\n4199    False\\nName: rpm, Length: 4200, dtype: bool.any"
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[idade_equipamento_meses-treino]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[idade_equipamento_meses-teste]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_faixas_operacionais_dos_dados[idade_equipamento_meses-producao]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_dados.py",
+      "teste": "test_nome_de_conjunto_invalido_e_rejeitado",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_distribuicoes.py",
+      "teste": "test_forma_muda_mesmo_com_media_igual",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_distribuicoes.py",
+      "teste": "test_ajuste_holm_preserva_ordem_e_controla_multiplicidade",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_distribuicoes.py",
+      "teste": "test_constantes_distintas_nao_possuem_efeito_padronizado_finito",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_distribuicoes.py",
+      "teste": "test_holm_rejeita_p_valores_invalidos[valores0]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_distribuicoes.py",
+      "teste": "test_holm_rejeita_p_valores_invalidos[valores1]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_distribuicoes.py",
+      "teste": "test_holm_rejeita_p_valores_invalidos[valores2]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_distribuicoes.py",
+      "teste": "test_holm_rejeita_p_valores_invalidos[valores3]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_distribuicoes.py",
+      "teste": "test_distribuicoes_rejeitam_comparacoes_invalidas[vazio]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_distribuicoes.py",
+      "teste": "test_distribuicoes_rejeitam_comparacoes_invalidas[infinito]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_distribuicoes.py",
+      "teste": "test_distribuicoes_rejeitam_comparacoes_invalidas[motores]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_distribuicoes.py",
+      "teste": "test_distribuicoes_rejeitam_comparacoes_invalidas[ausente]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_distribuicoes.py",
+      "teste": "test_distribuicoes_rejeitam_comparacoes_invalidas[repeticoes]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_estatistico.py",
+      "teste": "test_matriz_e_metricas_possuem_oraculo_conhecido",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_estatistico.py",
+      "teste": "test_metricas_tratam_denominadores_nulos_e_formas_distintas",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_estatistico.py",
+      "teste": "test_contagens_invalidas_sao_rejeitadas[contagens0]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_estatistico.py",
+      "teste": "test_contagens_invalidas_sao_rejeitadas[contagens1]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_estatistico.py",
+      "teste": "test_contagens_invalidas_sao_rejeitadas[contagens2]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_estatistico.py",
+      "teste": "test_bootstrap_pareado_detecta_sinal_e_preserva_identidade",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_estatistico.py",
+      "teste": "test_bootstrap_rejeita_amostra_invalida[vazio]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_estatistico.py",
+      "teste": "test_bootstrap_rejeita_amostra_invalida[grupo_unico]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_estatistico.py",
+      "teste": "test_bootstrap_rejeita_amostra_invalida[nao_binario]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_estatistico.py",
+      "teste": "test_bootstrap_rejeita_amostra_invalida[ausente]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_estatistico.py",
+      "teste": "test_bootstrap_rejeita_amostra_invalida[repeticoes]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_estatistico.py",
+      "teste": "test_linha_base_reproduz_contagens_e_modelo_trivial[treino]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_estatistico.py",
+      "teste": "test_linha_base_reproduz_contagens_e_modelo_trivial[teste]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_estatistico.py",
+      "teste": "test_linha_base_reproduz_contagens_e_modelo_trivial[producao]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_estatistico.py",
+      "teste": "test_comparacao_real_reproduz_intervalos_salvos[teste]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_estatistico.py",
+      "teste": "test_comparacao_real_reproduz_intervalos_salvos[producao]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_features.py",
+      "teste": "test_treze_features_em_lote_constante",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_features.py",
+      "teste": "test_embaralhamento_preserva_identidade_e_valores",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_features.py",
+      "teste": "test_janelas_nao_misturam_motores",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_features.py",
+      "teste": "test_janelas_passadas_e_delta_24h",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_features.py",
+      "teste": "test_leituras_futuras_nao_alteram_feature_passada",
+      "resultado": "falhou",
+      "mensagem": "AssertionError: Passado mudou de 60.0 para 65.0\nassert np.float64(65.0) == 60.0 ± 6.0e-05\n  \n  comparison failed\n  Obtained: 65.0\n  Expected: 60.0 ± 6.0e-05"
+    },
+    {
+      "arquivo": "tests/test_features.py",
+      "teste": "test_alvo_futuro_nao_altera_risco_passado",
+      "resultado": "falhou",
+      "mensagem": "AssertionError: Risco passado: 0.0 -> 0.5\nassert np.float64(0.5) == 0.0 ± 1.0e-12\n  \n  comparison failed\n  Obtained: 0.5\n  Expected: 0.0 ± 1.0e-12"
+    },
+    {
+      "arquivo": "tests/test_features.py",
+      "teste": "test_recorte_com_historico_suficiente_independe_do_futuro",
+      "resultado": "falhou",
+      "mensagem": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=1e-12\n\nMismatched elements: 1 / 13 (7.69%)\nMismatch at index:\n [0]: 75.1063829787234 (ACTUAL), 75.95744680851064 (DESIRED)\nMax absolute difference among violations: 0.85106383\nMax relative difference among violations: 0.01120448\n ACTUAL: array([7.510638e+01, 7.638298e+01, 2.042553e+01, 2.000000e+00,\n       2.000000e+00, 1.800000e+01, 3.500000e+00, 1.700000e+03,\n       6.000000e+01, 1.000000e+02, 1.086310e-01, 0.000000e+00,\n       1.000000e+00])\n DESIRED: array([7.595745e+01, 7.638298e+01, 2.042553e+01, 2.000000e+00,\n       2.000000e+00, 1.800000e+01, 3.500000e+00, 1.700000e+03,\n       6.000000e+01, 1.000000e+02, 1.086310e-01, 0.000000e+00,\n       1.000000e+00])"
+    },
+    {
+      "arquivo": "tests/test_features.py",
+      "teste": "test_um_motor_e_linha_unica_sao_deterministicos[1]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_features.py",
+      "teste": "test_um_motor_e_linha_unica_sao_deterministicos[48]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_features.py",
+      "teste": "test_features_exigem_campos_documentados",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_probabilidades_decisoes_ordem_e_determinismo[v1]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_probabilidades_decisoes_ordem_e_determinismo[v2]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_limiar_exatamente_no_limite[0.5-1]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_limiar_exatamente_no_limite[0.50000001-0]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_limiar_exatamente_no_limite[0.49999999-1]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_modelo_rejeita_valores_invalidos[nan]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_modelo_rejeita_valores_invalidos[inf]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_modelo_rejeita_valores_invalidos[-inf]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_modelo_rejeita_valores_invalidos[invalido]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_modelo_rejeita_forma_invalida[forma0]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_modelo_rejeita_forma_invalida[forma1]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_modelo_rejeita_forma_invalida[forma2]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_modelo_rejeita_forma_invalida[forma3]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_registro_canonico_equivale_ao_lote[v1]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_registro_canonico_equivale_ao_lote[v2]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_registro_rejeita_cardinalidade_ou_tipo_invalido[remover]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_registro_rejeita_cardinalidade_ou_tipo_invalido[adicionar]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_registro_rejeita_cardinalidade_ou_tipo_invalido[tipo]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_registro_rejeita_chave_substituida",
+      "resultado": "falhou",
+      "mensagem": "Failed: DID NOT RAISE ValueError"
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_registro_independe_da_ordem_de_insercao[v1]",
+      "resultado": "falhou",
+      "mensagem": "AssertionError: 22/100 decisões mudaram só pela ordem das chaves\nassert 22 == 0"
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_registro_independe_da_ordem_de_insercao[v2]",
+      "resultado": "falhou",
+      "mensagem": "AssertionError: 12/100 decisões mudaram só pela ordem das chaves\nassert 12 == 0"
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_dataframe_exige_features_e_aceita_coluna_adicional",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_modelo.py",
+      "teste": "test_versao_inexistente_e_rejeitada",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_pipeline.py",
+      "teste": "test_pipeline_preserva_identidade_alvo_e_decisao[v1]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_pipeline.py",
+      "teste": "test_pipeline_preserva_identidade_alvo_e_decisao[v2]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_pipeline.py",
+      "teste": "test_pipeline_limiar_inclusivo_e_sem_alvo",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_pipeline.py",
+      "teste": "test_extremos_operacionais_validos_sao_processados[45-1.2-3-12-1650-6]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_pipeline.py",
+      "teste": "test_extremos_operacionais_validos_sao_processados[95-8-4.5-30-1800-180]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_pipeline.py",
+      "teste": "test_leitura_fisicamente_invalida_nao_gera_decisao[temperatura_c--274.0]",
+      "resultado": "falhou",
+      "mensagem": "AssertionError: temperatura_c=-274.0 produziu 1 decisão sem rejeição\nassert False\n +  where False =   id_maquina  timestamp  probabilidade  predicao\\n0        M01 2026-06-01       0.069965         0.empty"
+    },
+    {
+      "arquivo": "tests/test_pipeline.py",
+      "teste": "test_leitura_fisicamente_invalida_nao_gera_decisao[vibracao_rms--1.0]",
+      "resultado": "falhou",
+      "mensagem": "AssertionError: vibracao_rms=-1.0 produziu 1 decisão sem rejeição\nassert False\n +  where False =   id_maquina  timestamp  probabilidade  predicao\\n0        M01 2026-06-01       0.082299         0.empty"
+    },
+    {
+      "arquivo": "tests/test_pipeline.py",
+      "teste": "test_leitura_fisicamente_invalida_nao_gera_decisao[idade_equipamento_meses--1]",
+      "resultado": "falhou",
+      "mensagem": "AssertionError: idade_equipamento_meses=-1 produziu 1 decisão sem rejeição\nassert False\n +  where False =   id_maquina  timestamp  probabilidade  predicao\\n0        M01 2026-06-01       0.034624         0.empty"
+    },
+    {
+      "arquivo": "tests/test_pipeline.py",
+      "teste": "test_lote_constante_com_valores_repetidos_e_preservado",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_preprocessamento.py",
+      "teste": "test_limpeza_preserva_entrada_e_normaliza_rotulos",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_preprocessamento.py",
+      "teste": "test_limpeza_e_idempotente",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_preprocessamento.py",
+      "teste": "test_motor_parado_e_descartado_com_ordem_preservada",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_preprocessamento.py",
+      "teste": "test_dropout_nao_se_converte_em_vibracao_fisicamente_invalida",
+      "resultado": "falhou",
+      "mensagem": "AssertionError: Dropout preenchido com 0.0 mm/s\nassert 1.2 <= np.float64(0.0)"
+    },
+    {
+      "arquivo": "tests/test_preprocessamento.py",
+      "teste": "test_pressao_equivalente_bar_psi_produz_mesma_feature",
+      "resultado": "falhou",
+      "mensagem": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=1e-10\n\nMismatched elements: 48 / 48 (100%)\nFirst 5 mismatches are at indices:\n [0]: 50.7633 (ACTUAL), 3.5 (DESIRED)\n [1]: 50.7633 (ACTUAL), 3.5 (DESIRED)\n [2]: 50.7633 (ACTUAL), 3.5 (DESIRED)\n [3]: 50.7633 (ACTUAL), 3.5 (DESIRED)\n [4]: 50.7633 (ACTUAL), 3.5 (DESIRED)\nMax absolute difference among violations: 47.2633\nMax relative difference among violations: 13.5038\n ACTUAL: array([50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633,\n       50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633,\n       50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633,...\n DESIRED: array([3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5,\n       3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5,\n       3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5,\n       3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5])"
+    },
+    {
+      "arquivo": "tests/test_preprocessamento.py",
+      "teste": "test_tipo_nao_convertivel_e_rejeitado[timestamp]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_preprocessamento.py",
+      "teste": "test_tipo_nao_convertivel_e_rejeitado[turno]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    },
+    {
+      "arquivo": "tests/test_preprocessamento.py",
+      "teste": "test_tipo_nao_convertivel_e_rejeitado[idade_equipamento_meses]",
+      "resultado": "aprovado",
+      "mensagem": ""
+    }
+  ],
+  "cobertura": {
+    "sentinela": {
+      "cobertos": 238.0,
+      "total": 245.0,
+      "percentual": 97.14285714285714
+    },
+    "auxiliar": {
+      "cobertos": 262.0,
+      "total": 264.0,
+      "percentual": 99.24242424242425
+    }
+  },
+  "limite_cobertura_auxiliar": 95.0,
+  "cobertura_auxiliar_atende": true,
+  "python": "3.14.4",
+  "sistema": "Linux",
+  "dependencias": {
+    "sentinela": "1.0.0",
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "pytest": "9.1.1",
+    "pytest-cov": "7.1.0",
+    "ruff": "0.16.7",
+    "mypy": "1.20.2"
+  }
+}

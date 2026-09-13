@@ -1,0 +1,486 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.1.1, pluggy-1.6.0
+rootdir: /mnt/c/Users/Luciano/Desktop/Projetos/puc/testes-automatizados-sentinela
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0
+collected 142 items
+
+tests/test_adversarial.py .......................                        [ 16%]
+tests/test_calibracao.py .........                                       [ 22%]
+tests/test_contrafactual.py .....                                        [ 26%]
+tests/test_dados.py ..............F.F...F.F....                          [ 45%]
+tests/test_distribuicoes.py ............                                 [ 53%]
+tests/test_estatistico.py ................                               [ 64%]
+tests/test_features.py ....FFF...                                        [ 71%]
+tests/test_modelo.py ..................FFF..                             [ 88%]
+tests/test_pipeline.py .....FFF.                                         [ 94%]
+tests/test_preprocessamento.py ...FF...                                  [100%]
+
+=================================== FAILURES ===================================
+______________ test_faixas_operacionais_dos_dados[pressao-treino] ______________
+
+conjunto = 'treino', coluna = 'pressao'
+
+    @pytest.mark.parametrize("conjunto", sn.dados.CONJUNTOS)
+    @pytest.mark.parametrize("coluna", FAIXAS)
+    def test_faixas_operacionais_dos_dados(conjunto: str, coluna: str) -> None:
+        """Conta violações no CSV, convertendo psi apenas para comparar grandezas."""
+        bruto = sn.dados.carregar(conjunto)
+        valores = pressao_em_bar(bruto) if coluna == "pressao" else bruto[coluna]
+        minimo, maximo = FAIXAS[coluna]
+        # Dropout é ausência conhecida, não uma leitura numérica fora da faixa.
+        invalidos = ~valores.dropna().between(minimo, maximo)
+>       assert not invalidos.any(), (
+            f"{conjunto}/{coluna}: {int(invalidos.sum())} fora da faixa"
+        )
+E       AssertionError: treino/pressao: 5 fora da faixa
+E       assert not np.True_
+E        +  where np.True_ = any()
+E        +    where any = 0        False\n1        False\n2        False\n3        False\n4        False\n         ...  \n16795    False\n16796    False\n16797    False\n16798    False\n16799    False\nName: pressao, Length: 16800, dtype: bool.any
+
+tests/test_dados.py:76: AssertionError
+_____________ test_faixas_operacionais_dos_dados[pressao-producao] _____________
+
+conjunto = 'producao', coluna = 'pressao'
+
+    @pytest.mark.parametrize("conjunto", sn.dados.CONJUNTOS)
+    @pytest.mark.parametrize("coluna", FAIXAS)
+    def test_faixas_operacionais_dos_dados(conjunto: str, coluna: str) -> None:
+        """Conta violações no CSV, convertendo psi apenas para comparar grandezas."""
+        bruto = sn.dados.carregar(conjunto)
+        valores = pressao_em_bar(bruto) if coluna == "pressao" else bruto[coluna]
+        minimo, maximo = FAIXAS[coluna]
+        # Dropout é ausência conhecida, não uma leitura numérica fora da faixa.
+        invalidos = ~valores.dropna().between(minimo, maximo)
+>       assert not invalidos.any(), (
+            f"{conjunto}/{coluna}: {int(invalidos.sum())} fora da faixa"
+        )
+E       AssertionError: producao/pressao: 1 fora da faixa
+E       assert not np.True_
+E        +  where np.True_ = any()
+E        +    where any = 0       False\n1       False\n2       False\n3       False\n4       False\n        ...  \n4195    False\n4196    False\n4197    False\n4198    False\n4199    False\nName: pressao, Length: 4200, dtype: bool.any
+
+tests/test_dados.py:76: AssertionError
+________________ test_faixas_operacionais_dos_dados[rpm-treino] ________________
+
+conjunto = 'treino', coluna = 'rpm'
+
+    @pytest.mark.parametrize("conjunto", sn.dados.CONJUNTOS)
+    @pytest.mark.parametrize("coluna", FAIXAS)
+    def test_faixas_operacionais_dos_dados(conjunto: str, coluna: str) -> None:
+        """Conta violações no CSV, convertendo psi apenas para comparar grandezas."""
+        bruto = sn.dados.carregar(conjunto)
+        valores = pressao_em_bar(bruto) if coluna == "pressao" else bruto[coluna]
+        minimo, maximo = FAIXAS[coluna]
+        # Dropout é ausência conhecida, não uma leitura numérica fora da faixa.
+        invalidos = ~valores.dropna().between(minimo, maximo)
+>       assert not invalidos.any(), (
+            f"{conjunto}/{coluna}: {int(invalidos.sum())} fora da faixa"
+        )
+E       AssertionError: treino/rpm: 4 fora da faixa
+E       assert not np.True_
+E        +  where np.True_ = any()
+E        +    where any = 0        False\n1        False\n2        False\n3        False\n4        False\n         ...  \n16795    False\n16796    False\n16797    False\n16798    False\n16799    False\nName: rpm, Length: 16800, dtype: bool.any
+
+tests/test_dados.py:76: AssertionError
+_______________ test_faixas_operacionais_dos_dados[rpm-producao] _______________
+
+conjunto = 'producao', coluna = 'rpm'
+
+    @pytest.mark.parametrize("conjunto", sn.dados.CONJUNTOS)
+    @pytest.mark.parametrize("coluna", FAIXAS)
+    def test_faixas_operacionais_dos_dados(conjunto: str, coluna: str) -> None:
+        """Conta violações no CSV, convertendo psi apenas para comparar grandezas."""
+        bruto = sn.dados.carregar(conjunto)
+        valores = pressao_em_bar(bruto) if coluna == "pressao" else bruto[coluna]
+        minimo, maximo = FAIXAS[coluna]
+        # Dropout é ausência conhecida, não uma leitura numérica fora da faixa.
+        invalidos = ~valores.dropna().between(minimo, maximo)
+>       assert not invalidos.any(), (
+            f"{conjunto}/{coluna}: {int(invalidos.sum())} fora da faixa"
+        )
+E       AssertionError: producao/rpm: 1 fora da faixa
+E       assert not np.True_
+E        +  where np.True_ = any()
+E        +    where any = 0       False\n1       False\n2       False\n3       False\n4       False\n        ...  \n4195    False\n4196    False\n4197    False\n4198    False\n4199    False\nName: rpm, Length: 4200, dtype: bool.any
+
+tests/test_dados.py:76: AssertionError
+______________ test_leituras_futuras_nao_alteram_feature_passada _______________
+
+lote_controlado =              timestamp id_maquina  ...     rpm horas_operacao
+0  2026-06-01 00:00:00        M01  ...  1700.0          ...  M01  ...  1700.0          100.0
+47 2026-06-02 23:00:00        M01  ...  1700.0          100.0
+
+[48 rows x 12 columns]
+
+    @pytest.mark.defeito
+    def test_leituras_futuras_nao_alteram_feature_passada(
+        lote_controlado: pd.DataFrame,
+    ) -> None:
+        """Modificar t=11 não pode alterar a feature de temperatura em t=10."""
+        alterado = lote_controlado.copy()
+        alterado.loc[11, "temperatura_c"] = 90
+        original = sn.features.construir(lote_controlado).loc[10, "temp_media_6h"]
+        obtido = sn.features.construir(alterado).loc[10, "temp_media_6h"]
+>       assert obtido == pytest.approx(original), (
+            f"Passado mudou de {original} para {obtido}"
+        )
+E       AssertionError: Passado mudou de 60.0 para 65.0
+E       assert np.float64(65.0) == 60.0 ± 6.0e-05
+E         
+E         comparison failed
+E         Obtained: 65.0
+E         Expected: 60.0 ± 6.0e-05
+
+tests/test_features.py:65: AssertionError
+__________________ test_alvo_futuro_nao_altera_risco_passado ___________________
+
+lote_controlado =              timestamp id_maquina  ...  horas_operacao falha_72h
+0  2026-06-01 00:00:00        M01  ...           100.... ...           100.0         0
+47 2026-06-02 23:00:00        M01  ...           100.0         0
+
+[48 rows x 13 columns]
+
+    @pytest.mark.defeito
+    def test_alvo_futuro_nao_altera_risco_passado(lote_controlado: pd.DataFrame) -> None:
+        """Rótulos das 24 últimas leituras não devem modificar a primeira feature."""
+        lote_controlado["falha_72h"] = 0
+        alterado = lote_controlado.copy()
+        alterado.loc[24:, "falha_72h"] = 1
+        original = sn.features.construir(lote_controlado).loc[0, "maquina_risco"]
+        obtido = sn.features.construir(alterado).loc[0, "maquina_risco"]
+>       assert obtido == pytest.approx(original), f"Risco passado: {original} -> {obtido}"
+E       AssertionError: Risco passado: 0.0 -> 0.5
+E       assert np.float64(0.5) == 0.0 ± 1.0e-12
+E         
+E         comparison failed
+E         Obtained: 0.5
+E         Expected: 0.0 ± 1.0e-12
+
+tests/test_features.py:78: AssertionError
+__________ test_recorte_com_historico_suficiente_independe_do_futuro ___________
+
+lote_controlado =              timestamp id_maquina  ...     rpm horas_operacao
+0  2026-06-01 00:00:00        M01  ...  1700.0          ...  M01  ...  1700.0          100.0
+47 2026-06-02 23:00:00        M01  ...  1700.0          100.0
+
+[48 rows x 12 columns]
+
+    @pytest.mark.defeito
+    def test_recorte_com_historico_suficiente_independe_do_futuro(
+        lote_controlado: pd.DataFrame,
+    ) -> None:
+        """O prefixo inclui todo o passado; diferenças não são falta de aquecimento."""
+        lote_controlado["temperatura_c"] = np.linspace(50, 90, 48)
+        completo = sn.features.construir(lote_controlado)
+        recorte = sn.features.construir(lote_controlado.iloc[:32])
+>       np.testing.assert_allclose(recorte.loc[31], completo.loc[31], atol=1e-12)
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-07, atol=1e-12
+E       
+E       Mismatched elements: 1 / 13 (7.69%)
+E       Mismatch at index:
+E        [0]: 75.1063829787234 (ACTUAL), 75.95744680851064 (DESIRED)
+E       Max absolute difference among violations: 0.85106383
+E       Max relative difference among violations: 0.01120448
+E        ACTUAL: array([7.510638e+01, 7.638298e+01, 2.042553e+01, 2.000000e+00,
+E              2.000000e+00, 1.800000e+01, 3.500000e+00, 1.700000e+03,
+E              6.000000e+01, 1.000000e+02, 1.086310e-01, 0.000000e+00,
+E              1.000000e+00])
+E        DESIRED: array([7.595745e+01, 7.638298e+01, 2.042553e+01, 2.000000e+00,
+E              2.000000e+00, 1.800000e+01, 3.500000e+00, 1.700000e+03,
+E              6.000000e+01, 1.000000e+02, 1.086310e-01, 0.000000e+00,
+E              1.000000e+00])
+
+tests/test_features.py:89: AssertionError
+___________________ test_registro_rejeita_chave_substituida ____________________
+
+features_reais =       temp_media_6h  temp_max_24h  ...  operador_senior  turno
+0         73.416667         72.76  ...              0.0...2  ...              0.0    3.0
+4199      72.705000         74.77  ...              0.0    3.0
+
+[4200 rows x 13 columns]
+
+    @pytest.mark.defeito
+    def test_registro_rejeita_chave_substituida(features_reais: pd.DataFrame) -> None:
+        """Ter 13 valores não basta quando uma feature obrigatória está ausente."""
+        registro = features_reais.iloc[0].to_dict()
+        registro["campo_desconhecido"] = registro.pop("turno")
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_modelo.py:103: Failed
+_______________ test_registro_independe_da_ordem_de_insercao[v1] _______________
+
+features_reais =       temp_media_6h  temp_max_24h  ...  operador_senior  turno
+0         73.416667         72.76  ...              0.0...2  ...              0.0    3.0
+4199      72.705000         74.77  ...              0.0    3.0
+
+[4200 rows x 13 columns]
+versao = 'v1'
+
+    @pytest.mark.defeito
+    @pytest.mark.parametrize("versao", ["v1", "v2"])
+    def test_registro_independe_da_ordem_de_insercao(
+        features_reais: pd.DataFrame,
+        versao: str,
+    ) -> None:
+        """Os mesmos nomes e valores devem produzir decisões idênticas."""
+        modelo = sn.modelo.carregar(versao)
+        amostra = features_reais.iloc[:100]
+        canonicas = modelo.prever(amostra)
+        invertidas = [
+            modelo.prever_registro(dict(reversed(list(linha.items()))))
+            for linha in amostra.to_dict(orient="records")
+        ]
+        mudancas = int(np.sum(canonicas != invertidas))
+>       assert mudancas == 0, f"{mudancas}/100 decisões mudaram só pela ordem das chaves"
+E       AssertionError: 22/100 decisões mudaram só pela ordem das chaves
+E       assert 22 == 0
+
+tests/test_modelo.py:122: AssertionError
+_______________ test_registro_independe_da_ordem_de_insercao[v2] _______________
+
+features_reais =       temp_media_6h  temp_max_24h  ...  operador_senior  turno
+0         73.416667         72.76  ...              0.0...2  ...              0.0    3.0
+4199      72.705000         74.77  ...              0.0    3.0
+
+[4200 rows x 13 columns]
+versao = 'v2'
+
+    @pytest.mark.defeito
+    @pytest.mark.parametrize("versao", ["v1", "v2"])
+    def test_registro_independe_da_ordem_de_insercao(
+        features_reais: pd.DataFrame,
+        versao: str,
+    ) -> None:
+        """Os mesmos nomes e valores devem produzir decisões idênticas."""
+        modelo = sn.modelo.carregar(versao)
+        amostra = features_reais.iloc[:100]
+        canonicas = modelo.prever(amostra)
+        invertidas = [
+            modelo.prever_registro(dict(reversed(list(linha.items()))))
+            for linha in amostra.to_dict(orient="records")
+        ]
+        mudancas = int(np.sum(canonicas != invertidas))
+>       assert mudancas == 0, f"{mudancas}/100 decisões mudaram só pela ordem das chaves"
+E       AssertionError: 12/100 decisões mudaram só pela ordem das chaves
+E       assert 12 == 0
+
+tests/test_modelo.py:122: AssertionError
+___ test_leitura_fisicamente_invalida_nao_gera_decisao[temperatura_c--274.0] ___
+
+lote_controlado =              timestamp id_maquina  ...     rpm horas_operacao
+0  2026-06-01 00:00:00        M01  ...  1700.0          ...  M01  ...  1700.0          100.0
+47 2026-06-02 23:00:00        M01  ...  1700.0          100.0
+
+[48 rows x 12 columns]
+campo = 'temperatura_c', valor = -274.0
+
+    @pytest.mark.rapido
+    @pytest.mark.defeito
+    @pytest.mark.parametrize(
+        "campo,valor",
+        [
+            ("temperatura_c", -274.0),
+            ("vibracao_rms", -1.0),
+            ("idade_equipamento_meses", -1),
+        ],
+    )
+    def test_leitura_fisicamente_invalida_nao_gera_decisao(
+        lote_controlado: pd.DataFrame,
+        campo: str,
+        valor: float,
+    ) -> None:
+        """Temperatura abaixo do zero absoluto, RMS e idade negativos são inválidos."""
+        entrada = lote_controlado.iloc[:1].assign(**{campo: valor})
+        try:
+            saida = sn.pipeline.executar(entrada)
+        except (ValueError, TypeError):
+            return
+>       assert saida.empty, f"{campo}={valor} produziu {len(saida)} decisão sem rejeição"
+E       AssertionError: temperatura_c=-274.0 produziu 1 decisão sem rejeição
+E       assert False
+E        +  where False =   id_maquina  timestamp  probabilidade  predicao\n0        M01 2026-06-01       0.069965         0.empty
+
+tests/test_pipeline.py:103: AssertionError
+____ test_leitura_fisicamente_invalida_nao_gera_decisao[vibracao_rms--1.0] _____
+
+lote_controlado =              timestamp id_maquina  ...     rpm horas_operacao
+0  2026-06-01 00:00:00        M01  ...  1700.0          ...  M01  ...  1700.0          100.0
+47 2026-06-02 23:00:00        M01  ...  1700.0          100.0
+
+[48 rows x 12 columns]
+campo = 'vibracao_rms', valor = -1.0
+
+    @pytest.mark.rapido
+    @pytest.mark.defeito
+    @pytest.mark.parametrize(
+        "campo,valor",
+        [
+            ("temperatura_c", -274.0),
+            ("vibracao_rms", -1.0),
+            ("idade_equipamento_meses", -1),
+        ],
+    )
+    def test_leitura_fisicamente_invalida_nao_gera_decisao(
+        lote_controlado: pd.DataFrame,
+        campo: str,
+        valor: float,
+    ) -> None:
+        """Temperatura abaixo do zero absoluto, RMS e idade negativos são inválidos."""
+        entrada = lote_controlado.iloc[:1].assign(**{campo: valor})
+        try:
+            saida = sn.pipeline.executar(entrada)
+        except (ValueError, TypeError):
+            return
+>       assert saida.empty, f"{campo}={valor} produziu {len(saida)} decisão sem rejeição"
+E       AssertionError: vibracao_rms=-1.0 produziu 1 decisão sem rejeição
+E       assert False
+E        +  where False =   id_maquina  timestamp  probabilidade  predicao\n0        M01 2026-06-01       0.082299         0.empty
+
+tests/test_pipeline.py:103: AssertionError
+_ test_leitura_fisicamente_invalida_nao_gera_decisao[idade_equipamento_meses--1] _
+
+lote_controlado =              timestamp id_maquina  ...     rpm horas_operacao
+0  2026-06-01 00:00:00        M01  ...  1700.0          ...  M01  ...  1700.0          100.0
+47 2026-06-02 23:00:00        M01  ...  1700.0          100.0
+
+[48 rows x 12 columns]
+campo = 'idade_equipamento_meses', valor = -1
+
+    @pytest.mark.rapido
+    @pytest.mark.defeito
+    @pytest.mark.parametrize(
+        "campo,valor",
+        [
+            ("temperatura_c", -274.0),
+            ("vibracao_rms", -1.0),
+            ("idade_equipamento_meses", -1),
+        ],
+    )
+    def test_leitura_fisicamente_invalida_nao_gera_decisao(
+        lote_controlado: pd.DataFrame,
+        campo: str,
+        valor: float,
+    ) -> None:
+        """Temperatura abaixo do zero absoluto, RMS e idade negativos são inválidos."""
+        entrada = lote_controlado.iloc[:1].assign(**{campo: valor})
+        try:
+            saida = sn.pipeline.executar(entrada)
+        except (ValueError, TypeError):
+            return
+>       assert saida.empty, f"{campo}={valor} produziu {len(saida)} decisão sem rejeição"
+E       AssertionError: idade_equipamento_meses=-1 produziu 1 decisão sem rejeição
+E       assert False
+E        +  where False =   id_maquina  timestamp  probabilidade  predicao\n0        M01 2026-06-01       0.034624         0.empty
+
+tests/test_pipeline.py:103: AssertionError
+________ test_dropout_nao_se_converte_em_vibracao_fisicamente_invalida _________
+
+lote_controlado =              timestamp id_maquina  ...     rpm horas_operacao
+0  2026-06-01 00:00:00        M01  ...  1700.0          ...  M01  ...  1700.0          100.0
+47 2026-06-02 23:00:00        M01  ...  1700.0          100.0
+
+[48 rows x 12 columns]
+
+    @pytest.mark.defeito
+    def test_dropout_nao_se_converte_em_vibracao_fisicamente_invalida(
+        lote_controlado: pd.DataFrame,
+    ) -> None:
+        """Um preenchimento numérico deve respeitar a faixa de 1,2–8 mm/s."""
+        lote_controlado.loc[0, "vibracao_rms"] = np.nan
+        obtido = sn.preprocessamento.limpar(lote_controlado).loc[0, "vibracao_rms"]
+>       assert 1.2 <= obtido <= 8.0, f"Dropout preenchido com {obtido} mm/s"
+E       AssertionError: Dropout preenchido com 0.0 mm/s
+E       assert 1.2 <= np.float64(0.0)
+
+tests/test_preprocessamento.py:52: AssertionError
+____________ test_pressao_equivalente_bar_psi_produz_mesma_feature _____________
+
+lote_controlado =              timestamp id_maquina  ...     rpm horas_operacao
+0  2026-06-01 00:00:00        M01  ...  1700.0          ...  M01  ...  1700.0          100.0
+47 2026-06-02 23:00:00        M01  ...  1700.0          100.0
+
+[48 rows x 12 columns]
+
+    @pytest.mark.defeito
+    def test_pressao_equivalente_bar_psi_produz_mesma_feature(
+        lote_controlado: pd.DataFrame,
+    ) -> None:
+        """Representações da mesma pressão não podem alterar a grandeza consumida."""
+        em_psi = lote_controlado.copy()
+        em_psi["pressao"] *= 14.5038
+        em_psi["unidade_pressao"] = "psi"
+        em_bar = sn.features.construir(sn.preprocessamento.limpar(lote_controlado))
+        convertido = sn.features.construir(sn.preprocessamento.limpar(em_psi))
+>       np.testing.assert_allclose(convertido["pressao"], em_bar["pressao"], atol=1e-10)
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-07, atol=1e-10
+E       
+E       Mismatched elements: 48 / 48 (100%)
+E       First 5 mismatches are at indices:
+E        [0]: 50.7633 (ACTUAL), 3.5 (DESIRED)
+E        [1]: 50.7633 (ACTUAL), 3.5 (DESIRED)
+E        [2]: 50.7633 (ACTUAL), 3.5 (DESIRED)
+E        [3]: 50.7633 (ACTUAL), 3.5 (DESIRED)
+E        [4]: 50.7633 (ACTUAL), 3.5 (DESIRED)
+E       Max absolute difference among violations: 47.2633
+E       Max relative difference among violations: 13.5038
+E        ACTUAL: array([50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633,
+E              50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633,
+E              50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633,...
+E        DESIRED: array([3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5,
+E              3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5,
+E              3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5,
+E              3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5])
+
+tests/test_preprocessamento.py:65: AssertionError
+=============================== warnings summary ===============================
+tests/test_preprocessamento.py::test_tipo_nao_convertivel_e_rejeitado[timestamp]
+  /mnt/c/Users/Luciano/Desktop/Projetos/puc/sentinela-nortemec/src/sentinela/preprocessamento.py:18: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+    limpo["timestamp"] = pd.to_datetime(limpo["timestamp"])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /mnt/c/Users/Luciano/Desktop/Projetos/puc/testes-automatizados-sentinela/evidencias/pytest.xml -
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.4-final-0 ________________
+
+Name                                                                                             Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------------------------------------------------------------------------------------------
+/mnt/c/Users/Luciano/Desktop/Projetos/puc/sentinela-nortemec/src/sentinela/__init__.py               3      0      0      0   100%
+/mnt/c/Users/Luciano/Desktop/Projetos/puc/sentinela-nortemec/src/sentinela/artefatos.py             32      3      8      2    88%   45-46, 49
+/mnt/c/Users/Luciano/Desktop/Projetos/puc/sentinela-nortemec/src/sentinela/avaliacao.py             17      0      2      0   100%
+/mnt/c/Users/Luciano/Desktop/Projetos/puc/sentinela-nortemec/src/sentinela/dados.py                 10      0      2      0   100%
+/mnt/c/Users/Luciano/Desktop/Projetos/puc/sentinela-nortemec/src/sentinela/features.py              44      0      6      0   100%
+/mnt/c/Users/Luciano/Desktop/Projetos/puc/sentinela-nortemec/src/sentinela/modelo.py                70      1     20      1    98%   117
+/mnt/c/Users/Luciano/Desktop/Projetos/puc/sentinela-nortemec/src/sentinela/pipeline.py              13      0      2      0   100%
+/mnt/c/Users/Luciano/Desktop/Projetos/puc/sentinela-nortemec/src/sentinela/preprocessamento.py      16      0      0      0   100%
+src/suite_sentinela/__init__.py                                                                      0      0      0      0   100%
+src/suite_sentinela/adversarial.py                                                                  27      0     10      0   100%
+src/suite_sentinela/calibracao.py                                                                   43      0     14      0   100%
+src/suite_sentinela/contratos.py                                                                    27      1      6      1    94%   28
+src/suite_sentinela/distribuicoes.py                                                                53      0     22      0   100%
+src/suite_sentinela/estatistica.py                                                                  44      0     18      0   100%
+--------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                              399      5    110      4    98%
+Coverage JSON written to file evidencias/cobertura.json
+=========================== short test summary info ============================
+FAILED tests/test_dados.py::test_faixas_operacionais_dos_dados[pressao-treino]
+FAILED tests/test_dados.py::test_faixas_operacionais_dos_dados[pressao-producao]
+FAILED tests/test_dados.py::test_faixas_operacionais_dos_dados[rpm-treino] - ...
+FAILED tests/test_dados.py::test_faixas_operacionais_dos_dados[rpm-producao]
+FAILED tests/test_features.py::test_leituras_futuras_nao_alteram_feature_passada
+FAILED tests/test_features.py::test_alvo_futuro_nao_altera_risco_passado - As...
+FAILED tests/test_features.py::test_recorte_com_historico_suficiente_independe_do_futuro
+FAILED tests/test_modelo.py::test_registro_rejeita_chave_substituida - Failed...
+FAILED tests/test_modelo.py::test_registro_independe_da_ordem_de_insercao[v1]
+FAILED tests/test_modelo.py::test_registro_independe_da_ordem_de_insercao[v2]
+FAILED tests/test_pipeline.py::test_leitura_fisicamente_invalida_nao_gera_decisao[temperatura_c--274.0]
+FAILED tests/test_pipeline.py::test_leitura_fisicamente_invalida_nao_gera_decisao[vibracao_rms--1.0]
+FAILED tests/test_pipeline.py::test_leitura_fisicamente_invalida_nao_gera_decisao[idade_equipamento_meses--1]
+FAILED tests/test_preprocessamento.py::test_dropout_nao_se_converte_em_vibracao_fisicamente_invalida
+FAILED tests/test_preprocessamento.py::test_pressao_equivalente_bar_psi_produz_mesma_feature
+================== 15 failed, 127 passed, 1 warning in 22.52s ==================

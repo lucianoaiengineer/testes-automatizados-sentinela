@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="15" skipped="0" tests="142" time="22.528" timestamp="2026-09-13T16:25:39.313786-03:00" hostname="matrix"><testcase classname="tests.test_adversarial" name="test_medicao_de_mudancas_distingue_abertura_e_cancelamento" time="0.017" /><testcase classname="tests.test_adversarial" name="test_ruido_termico_respeita_domino_e_mede_sensibilidade[-0.4-v1]" time="0.293" /><testcase classname="tests.test_adversarial" name="test_ruido_termico_respeita_domino_e_mede_sensibilidade[-0.4-v2]" time="0.271" /><testcase classname="tests.test_adversarial" name="test_ruido_termico_respeita_domino_e_mede_sensibilidade[0.4-v1]" time="0.185" /><testcase classname="tests.test_adversarial" name="test_ruido_termico_respeita_domino_e_mede_sensibilidade[0.4-v2]" time="0.282" /><testcase classname="tests.test_adversarial" name="test_permutacao_altera_apenas_uma_feature[temp_media_6h]" time="0.067" /><testcase classname="tests.test_adversarial" name="test_permutacao_altera_apenas_uma_feature[temp_max_24h]" time="0.058" /><testcase classname="tests.test_adversarial" name="test_permutacao_altera_apenas_uma_feature[delta_temp_24h]" time="0.057" /><testcase classname="tests.test_adversarial" name="test_permutacao_altera_apenas_uma_feature[vib_media_6h]" time="0.061" /><testcase classname="tests.test_adversarial" name="test_permutacao_altera_apenas_uma_feature[vib_max_24h]" time="0.056" /><testcase classname="tests.test_adversarial" name="test_permutacao_altera_apenas_uma_feature[corrente_media_6h]" time="0.059" /><testcase classname="tests.test_adversarial" name="test_permutacao_altera_apenas_uma_feature[pressao]" time="0.056" /><testcase classname="tests.test_adversarial" name="test_permutacao_altera_apenas_uma_feature[rpm]" time="0.063" /><testcase classname="tests.test_adversarial" name="test_permutacao_altera_apenas_uma_feature[idade_equipamento_meses]" time="0.066" /><testcase classname="tests.test_adversarial" name="test_permutacao_altera_apenas_uma_feature[horas_operacao]" time="0.060" /><testcase classname="tests.test_adversarial" name="test_permutacao_altera_apenas_uma_feature[maquina_risco]" time="0.059" /><testcase classname="tests.test_adversarial" name="test_permutacao_altera_apenas_uma_feature[operador_senior]" time="0.061" /><testcase classname="tests.test_adversarial" name="test_permutacao_altera_apenas_uma_feature[turno]" time="0.062" /><testcase classname="tests.test_adversarial" name="test_perturbacao_rejeita_magnitude_fora_do_ensaio[0]" time="0.025" /><testcase classname="tests.test_adversarial" name="test_perturbacao_rejeita_magnitude_fora_do_ensaio[1]" time="0.001" /><testcase classname="tests.test_adversarial" name="test_perturbacao_rejeita_magnitude_fora_do_ensaio[-1]" time="0.001" /><testcase classname="tests.test_adversarial" name="test_perturbacao_rejeita_magnitude_fora_do_ensaio[inf]" time="0.001" /><testcase classname="tests.test_adversarial" name="test_auxiliares_rejeitam_entradas_sem_significado" time="0.002" /><testcase classname="tests.test_calibracao" name="test_calibracao_perfeita_inclui_probabilidade_um_e_faixas_vazias" time="0.009" /><testcase classname="tests.test_calibracao" name="test_probabilidade_constante_reproduz_frequencia_observada" time="0.001" /><testcase classname="tests.test_calibracao" name="test_varredura_tem_limiar_padrao_e_recall_nao_crescente" time="0.018" /><testcase classname="tests.test_calibracao" name="test_calibracao_rejeita_vetores_invalidos[alvo0-probabilidades0]" time="0.000" /><testcase classname="tests.test_calibracao" name="test_calibracao_rejeita_vetores_invalidos[alvo1-probabilidades1]" time="0.000" /><testcase classname="tests.test_calibracao" name="test_calibracao_rejeita_vetores_invalidos[alvo2-probabilidades2]" time="0.001" /><testcase classname="tests.test_calibracao" name="test_calibracao_rejeita_vetores_invalidos[alvo3-probabilidades3]" time="0.001" /><testcase classname="tests.test_calibracao" name="test_calibracao_rejeita_vetores_invalidos[alvo4-probabilidades4]" time="0.001" /><testcase classname="tests.test_calibracao" name="test_numero_de_faixas_deve_ser_positivo" time="0.001" /><testcase classname="tests.test_contrafactual" name="test_contrafactual_administrativo_mantem_estado_fisico[v1-id_operador-OP-01-OP-07]" time="0.183" /><testcase classname="tests.test_contrafactual" name="test_contrafactual_administrativo_mantem_estado_fisico[v1-turno-1-3]" time="0.187" /><testcase classname="tests.test_contrafactual" name="test_contrafactual_administrativo_mantem_estado_fisico[v2-id_operador-OP-01-OP-07]" time="0.242" /><testcase classname="tests.test_contrafactual" name="test_contrafactual_administrativo_mantem_estado_fisico[v2-turno-1-3]" time="0.247" /><testcase classname="tests.test_contrafactual" name="test_formatacao_do_operador_nao_altera_decisao" time="0.186" /><testcase classname="tests.test_dados" name="test_manifesto_e_estado_original_conferem" time="0.714" /><testcase classname="tests.test_dados" name="test_schema_completude_tipos_e_alvo[treino-16800]" time="0.051" /><testcase classname="tests.test_dados" name="test_schema_completude_tipos_e_alvo[teste-4200]" time="0.024" /><testcase classname="tests.test_dados" name="test_schema_completude_tipos_e_alvo[producao-4200]" time="0.021" /><testcase classname="tests.test_dados" name="test_chave_temporal_unica_e_cadencia_horaria[treino]" time="0.052" /><testcase classname="tests.test_dados" name="test_chave_temporal_unica_e_cadencia_horaria[teste]" time="0.022" /><testcase classname="tests.test_dados" name="test_chave_temporal_unica_e_cadencia_horaria[producao]" time="0.022" /><testcase classname="tests.test_dados" name="test_particoes_temporais_nao_se_sobrepoem" time="0.072" /><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[temperatura_c-treino]" time="0.037" /><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[temperatura_c-teste]" time="0.017" /><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[temperatura_c-producao]" time="0.015" /><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[vibracao_rms-treino]" time="0.034" /><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[vibracao_rms-teste]" time="0.017" /><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[vibracao_rms-producao]" time="0.015" /><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[pressao-treino]" time="0.047"><failure message="AssertionError: treino/pressao: 5 fora da faixa&#10;assert not np.True_&#10; +  where np.True_ = any()&#10; +    where any = 0        False\n1        False\n2        False\n3        False\n4        False\n         ...  \n16795    False\n16796    False\n16797    False\n16798    False\n16799    False\nName: pressao, Length: 16800, dtype: bool.any">conjunto = 'treino', coluna = 'pressao'
+
+    @pytest.mark.parametrize("conjunto", sn.dados.CONJUNTOS)
+    @pytest.mark.parametrize("coluna", FAIXAS)
+    def test_faixas_operacionais_dos_dados(conjunto: str, coluna: str) -&gt; None:
+        """Conta violações no CSV, convertendo psi apenas para comparar grandezas."""
+        bruto = sn.dados.carregar(conjunto)
+        valores = pressao_em_bar(bruto) if coluna == "pressao" else bruto[coluna]
+        minimo, maximo = FAIXAS[coluna]
+        # Dropout é ausência conhecida, não uma leitura numérica fora da faixa.
+        invalidos = ~valores.dropna().between(minimo, maximo)
+&gt;       assert not invalidos.any(), (
+            f"{conjunto}/{coluna}: {int(invalidos.sum())} fora da faixa"
+        )
+E       AssertionError: treino/pressao: 5 fora da faixa
+E       assert not np.True_
+E        +  where np.True_ = any()
+E        +    where any = 0        False\n1        False\n2        False\n3        False\n4        False\n         ...  \n16795    False\n16796    False\n16797    False\n16798    False\n16799    False\nName: pressao, Length: 16800, dtype: bool.any
+
+tests/test_dados.py:76: AssertionError</failure></testcase><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[pressao-teste]" time="0.016" /><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[pressao-producao]" time="0.015"><failure message="AssertionError: producao/pressao: 1 fora da faixa&#10;assert not np.True_&#10; +  where np.True_ = any()&#10; +    where any = 0       False\n1       False\n2       False\n3       False\n4       False\n        ...  \n4195    False\n4196    False\n4197    False\n4198    False\n4199    False\nName: pressao, Length: 4200, dtype: bool.any">conjunto = 'producao', coluna = 'pressao'
+
+    @pytest.mark.parametrize("conjunto", sn.dados.CONJUNTOS)
+    @pytest.mark.parametrize("coluna", FAIXAS)
+    def test_faixas_operacionais_dos_dados(conjunto: str, coluna: str) -&gt; None:
+        """Conta violações no CSV, convertendo psi apenas para comparar grandezas."""
+        bruto = sn.dados.carregar(conjunto)
+        valores = pressao_em_bar(bruto) if coluna == "pressao" else bruto[coluna]
+        minimo, maximo = FAIXAS[coluna]
+        # Dropout é ausência conhecida, não uma leitura numérica fora da faixa.
+        invalidos = ~valores.dropna().between(minimo, maximo)
+&gt;       assert not invalidos.any(), (
+            f"{conjunto}/{coluna}: {int(invalidos.sum())} fora da faixa"
+        )
+E       AssertionError: producao/pressao: 1 fora da faixa
+E       assert not np.True_
+E        +  where np.True_ = any()
+E        +    where any = 0       False\n1       False\n2       False\n3       False\n4       False\n        ...  \n4195    False\n4196    False\n4197    False\n4198    False\n4199    False\nName: pressao, Length: 4200, dtype: bool.any
+
+tests/test_dados.py:76: AssertionError</failure></testcase><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[corrente_a-treino]" time="0.035" /><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[corrente_a-teste]" time="0.012" /><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[corrente_a-producao]" time="0.012" /><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[rpm-treino]" time="0.032"><failure message="AssertionError: treino/rpm: 4 fora da faixa&#10;assert not np.True_&#10; +  where np.True_ = any()&#10; +    where any = 0        False\n1        False\n2        False\n3        False\n4        False\n         ...  \n16795    False\n16796    False\n16797    False\n16798    False\n16799    False\nName: rpm, Length: 16800, dtype: bool.any">conjunto = 'treino', coluna = 'rpm'
+
+    @pytest.mark.parametrize("conjunto", sn.dados.CONJUNTOS)
+    @pytest.mark.parametrize("coluna", FAIXAS)
+    def test_faixas_operacionais_dos_dados(conjunto: str, coluna: str) -&gt; None:
+        """Conta violações no CSV, convertendo psi apenas para comparar grandezas."""
+        bruto = sn.dados.carregar(conjunto)
+        valores = pressao_em_bar(bruto) if coluna == "pressao" else bruto[coluna]
+        minimo, maximo = FAIXAS[coluna]
+        # Dropout é ausência conhecida, não uma leitura numérica fora da faixa.
+        invalidos = ~valores.dropna().between(minimo, maximo)
+&gt;       assert not invalidos.any(), (
+            f"{conjunto}/{coluna}: {int(invalidos.sum())} fora da faixa"
+        )
+E       AssertionError: treino/rpm: 4 fora da faixa
+E       assert not np.True_
+E        +  where np.True_ = any()
+E        +    where any = 0        False\n1        False\n2        False\n3        False\n4        False\n         ...  \n16795    False\n16796    False\n16797    False\n16798    False\n16799    False\nName: rpm, Length: 16800, dtype: bool.any
+
+tests/test_dados.py:76: AssertionError</failure></testcase><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[rpm-teste]" time="0.014" /><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[rpm-producao]" time="0.013"><failure message="AssertionError: producao/rpm: 1 fora da faixa&#10;assert not np.True_&#10; +  where np.True_ = any()&#10; +    where any = 0       False\n1       False\n2       False\n3       False\n4       False\n        ...  \n4195    False\n4196    False\n4197    False\n4198    False\n4199    False\nName: rpm, Length: 4200, dtype: bool.any">conjunto = 'producao', coluna = 'rpm'
+
+    @pytest.mark.parametrize("conjunto", sn.dados.CONJUNTOS)
+    @pytest.mark.parametrize("coluna", FAIXAS)
+    def test_faixas_operacionais_dos_dados(conjunto: str, coluna: str) -&gt; None:
+        """Conta violações no CSV, convertendo psi apenas para comparar grandezas."""
+        bruto = sn.dados.carregar(conjunto)
+        valores = pressao_em_bar(bruto) if coluna == "pressao" else bruto[coluna]
+        minimo, maximo = FAIXAS[coluna]
+        # Dropout é ausência conhecida, não uma leitura numérica fora da faixa.
+        invalidos = ~valores.dropna().between(minimo, maximo)
+&gt;       assert not invalidos.any(), (
+            f"{conjunto}/{coluna}: {int(invalidos.sum())} fora da faixa"
+        )
+E       AssertionError: producao/rpm: 1 fora da faixa
+E       assert not np.True_
+E        +  where np.True_ = any()
+E        +    where any = 0       False\n1       False\n2       False\n3       False\n4       False\n        ...  \n4195    False\n4196    False\n4197    False\n4198    False\n4199    False\nName: rpm, Length: 4200, dtype: bool.any
+
+tests/test_dados.py:76: AssertionError</failure></testcase><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[idade_equipamento_meses-treino]" time="0.034" /><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[idade_equipamento_meses-teste]" time="0.013" /><testcase classname="tests.test_dados" name="test_faixas_operacionais_dos_dados[idade_equipamento_meses-producao]" time="0.012" /><testcase classname="tests.test_dados" name="test_nome_de_conjunto_invalido_e_rejeitado" time="0.000" /><testcase classname="tests.test_distribuicoes" name="test_forma_muda_mesmo_com_media_igual" time="0.033" /><testcase classname="tests.test_distribuicoes" name="test_ajuste_holm_preserva_ordem_e_controla_multiplicidade" time="0.001" /><testcase classname="tests.test_distribuicoes" name="test_constantes_distintas_nao_possuem_efeito_padronizado_finito" time="0.005" /><testcase classname="tests.test_distribuicoes" name="test_holm_rejeita_p_valores_invalidos[valores0]" time="0.001" /><testcase classname="tests.test_distribuicoes" name="test_holm_rejeita_p_valores_invalidos[valores1]" time="0.000" /><testcase classname="tests.test_distribuicoes" name="test_holm_rejeita_p_valores_invalidos[valores2]" time="0.000" /><testcase classname="tests.test_distribuicoes" name="test_holm_rejeita_p_valores_invalidos[valores3]" time="0.001" /><testcase classname="tests.test_distribuicoes" name="test_distribuicoes_rejeitam_comparacoes_invalidas[vazio]" time="0.001" /><testcase classname="tests.test_distribuicoes" name="test_distribuicoes_rejeitam_comparacoes_invalidas[infinito]" time="0.001" /><testcase classname="tests.test_distribuicoes" name="test_distribuicoes_rejeitam_comparacoes_invalidas[motores]" time="0.001" /><testcase classname="tests.test_distribuicoes" name="test_distribuicoes_rejeitam_comparacoes_invalidas[ausente]" time="0.002" /><testcase classname="tests.test_distribuicoes" name="test_distribuicoes_rejeitam_comparacoes_invalidas[repeticoes]" time="0.001" /><testcase classname="tests.test_estatistico" name="test_matriz_e_metricas_possuem_oraculo_conhecido" time="0.009" /><testcase classname="tests.test_estatistico" name="test_metricas_tratam_denominadores_nulos_e_formas_distintas" time="0.001" /><testcase classname="tests.test_estatistico" name="test_contagens_invalidas_sao_rejeitadas[contagens0]" time="0.001" /><testcase classname="tests.test_estatistico" name="test_contagens_invalidas_sao_rejeitadas[contagens1]" time="0.000" /><testcase classname="tests.test_estatistico" name="test_contagens_invalidas_sao_rejeitadas[contagens2]" time="0.000" /><testcase classname="tests.test_estatistico" name="test_bootstrap_pareado_detecta_sinal_e_preserva_identidade" time="0.009" /><testcase classname="tests.test_estatistico" name="test_bootstrap_rejeita_amostra_invalida[vazio]" time="0.001" /><testcase classname="tests.test_estatistico" name="test_bootstrap_rejeita_amostra_invalida[grupo_unico]" time="0.002" /><testcase classname="tests.test_estatistico" name="test_bootstrap_rejeita_amostra_invalida[nao_binario]" time="0.002" /><testcase classname="tests.test_estatistico" name="test_bootstrap_rejeita_amostra_invalida[ausente]" time="0.002" /><testcase classname="tests.test_estatistico" name="test_bootstrap_rejeita_amostra_invalida[repeticoes]" time="0.001" /><testcase classname="tests.test_estatistico" name="test_linha_base_reproduz_contagens_e_modelo_trivial[treino]" time="0.056" /><testcase classname="tests.test_estatistico" name="test_linha_base_reproduz_contagens_e_modelo_trivial[teste]" time="0.032" /><testcase classname="tests.test_estatistico" name="test_linha_base_reproduz_contagens_e_modelo_trivial[producao]" time="0.026" /><testcase classname="tests.test_estatistico" name="test_comparacao_real_reproduz_intervalos_salvos[teste]" time="0.028" /><testcase classname="tests.test_estatistico" name="test_comparacao_real_reproduz_intervalos_salvos[producao]" time="0.029" /><testcase classname="tests.test_features" name="test_treze_features_em_lote_constante" time="0.008" /><testcase classname="tests.test_features" name="test_embaralhamento_preserva_identidade_e_valores" time="0.022" /><testcase classname="tests.test_features" name="test_janelas_nao_misturam_motores" time="0.025" /><testcase classname="tests.test_features" name="test_janelas_passadas_e_delta_24h" time="0.016" /><testcase classname="tests.test_features" name="test_leituras_futuras_nao_alteram_feature_passada" time="0.044"><failure message="AssertionError: Passado mudou de 60.0 para 65.0&#10;assert np.float64(65.0) == 60.0 ± 6.0e-05&#10;  &#10;  comparison failed&#10;  Obtained: 65.0&#10;  Expected: 60.0 ± 6.0e-05">lote_controlado =              timestamp id_maquina  ...     rpm horas_operacao
+0  2026-06-01 00:00:00        M01  ...  1700.0          ...  M01  ...  1700.0          100.0
+47 2026-06-02 23:00:00        M01  ...  1700.0          100.0
+
+[48 rows x 12 columns]
+
+    @pytest.mark.defeito
+    def test_leituras_futuras_nao_alteram_feature_passada(
+        lote_controlado: pd.DataFrame,
+    ) -&gt; None:
+        """Modificar t=11 não pode alterar a feature de temperatura em t=10."""
+        alterado = lote_controlado.copy()
+        alterado.loc[11, "temperatura_c"] = 90
+        original = sn.features.construir(lote_controlado).loc[10, "temp_media_6h"]
+        obtido = sn.features.construir(alterado).loc[10, "temp_media_6h"]
+&gt;       assert obtido == pytest.approx(original), (
+            f"Passado mudou de {original} para {obtido}"
+        )
+E       AssertionError: Passado mudou de 60.0 para 65.0
+E       assert np.float64(65.0) == 60.0 ± 6.0e-05
+E         
+E         comparison failed
+E         Obtained: 65.0
+E         Expected: 60.0 ± 6.0e-05
+
+tests/test_features.py:65: AssertionError</failure></testcase><testcase classname="tests.test_features" name="test_alvo_futuro_nao_altera_risco_passado" time="0.022"><failure message="AssertionError: Risco passado: 0.0 -&gt; 0.5&#10;assert np.float64(0.5) == 0.0 ± 1.0e-12&#10;  &#10;  comparison failed&#10;  Obtained: 0.5&#10;  Expected: 0.0 ± 1.0e-12">lote_controlado =              timestamp id_maquina  ...  horas_operacao falha_72h
+0  2026-06-01 00:00:00        M01  ...           100.... ...           100.0         0
+47 2026-06-02 23:00:00        M01  ...           100.0         0
+
+[48 rows x 13 columns]
+
+    @pytest.mark.defeito
+    def test_alvo_futuro_nao_altera_risco_passado(lote_controlado: pd.DataFrame) -&gt; None:
+        """Rótulos das 24 últimas leituras não devem modificar a primeira feature."""
+        lote_controlado["falha_72h"] = 0
+        alterado = lote_controlado.copy()
+        alterado.loc[24:, "falha_72h"] = 1
+        original = sn.features.construir(lote_controlado).loc[0, "maquina_risco"]
+        obtido = sn.features.construir(alterado).loc[0, "maquina_risco"]
+&gt;       assert obtido == pytest.approx(original), f"Risco passado: {original} -&gt; {obtido}"
+E       AssertionError: Risco passado: 0.0 -&gt; 0.5
+E       assert np.float64(0.5) == 0.0 ± 1.0e-12
+E         
+E         comparison failed
+E         Obtained: 0.5
+E         Expected: 0.0 ± 1.0e-12
+
+tests/test_features.py:78: AssertionError</failure></testcase><testcase classname="tests.test_features" name="test_recorte_com_historico_suficiente_independe_do_futuro" time="0.017"><failure message="AssertionError: &#10;Not equal to tolerance rtol=1e-07, atol=1e-12&#10;&#10;Mismatched elements: 1 / 13 (7.69%)&#10;Mismatch at index:&#10; [0]: 75.1063829787234 (ACTUAL), 75.95744680851064 (DESIRED)&#10;Max absolute difference among violations: 0.85106383&#10;Max relative difference among violations: 0.01120448&#10; ACTUAL: array([7.510638e+01, 7.638298e+01, 2.042553e+01, 2.000000e+00,&#10;       2.000000e+00, 1.800000e+01, 3.500000e+00, 1.700000e+03,&#10;       6.000000e+01, 1.000000e+02, 1.086310e-01, 0.000000e+00,&#10;       1.000000e+00])&#10; DESIRED: array([7.595745e+01, 7.638298e+01, 2.042553e+01, 2.000000e+00,&#10;       2.000000e+00, 1.800000e+01, 3.500000e+00, 1.700000e+03,&#10;       6.000000e+01, 1.000000e+02, 1.086310e-01, 0.000000e+00,&#10;       1.000000e+00])">lote_controlado =              timestamp id_maquina  ...     rpm horas_operacao
+0  2026-06-01 00:00:00        M01  ...  1700.0          ...  M01  ...  1700.0          100.0
+47 2026-06-02 23:00:00        M01  ...  1700.0          100.0
+
+[48 rows x 12 columns]
+
+    @pytest.mark.defeito
+    def test_recorte_com_historico_suficiente_independe_do_futuro(
+        lote_controlado: pd.DataFrame,
+    ) -&gt; None:
+        """O prefixo inclui todo o passado; diferenças não são falta de aquecimento."""
+        lote_controlado["temperatura_c"] = np.linspace(50, 90, 48)
+        completo = sn.features.construir(lote_controlado)
+        recorte = sn.features.construir(lote_controlado.iloc[:32])
+&gt;       np.testing.assert_allclose(recorte.loc[31], completo.loc[31], atol=1e-12)
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-07, atol=1e-12
+E       
+E       Mismatched elements: 1 / 13 (7.69%)
+E       Mismatch at index:
+E        [0]: 75.1063829787234 (ACTUAL), 75.95744680851064 (DESIRED)
+E       Max absolute difference among violations: 0.85106383
+E       Max relative difference among violations: 0.01120448
+E        ACTUAL: array([7.510638e+01, 7.638298e+01, 2.042553e+01, 2.000000e+00,
+E              2.000000e+00, 1.800000e+01, 3.500000e+00, 1.700000e+03,
+E              6.000000e+01, 1.000000e+02, 1.086310e-01, 0.000000e+00,
+E              1.000000e+00])
+E        DESIRED: array([7.595745e+01, 7.638298e+01, 2.042553e+01, 2.000000e+00,
+E              2.000000e+00, 1.800000e+01, 3.500000e+00, 1.700000e+03,
+E              6.000000e+01, 1.000000e+02, 1.086310e-01, 0.000000e+00,
+E              1.000000e+00])
+
+tests/test_features.py:89: AssertionError</failure></testcase><testcase classname="tests.test_features" name="test_um_motor_e_linha_unica_sao_deterministicos[1]" time="0.016" /><testcase classname="tests.test_features" name="test_um_motor_e_linha_unica_sao_deterministicos[48]" time="0.017" /><testcase classname="tests.test_features" name="test_features_exigem_campos_documentados" time="0.002" /><testcase classname="tests.test_modelo" name="test_probabilidades_decisoes_ordem_e_determinismo[v1]" time="0.241" /><testcase classname="tests.test_modelo" name="test_probabilidades_decisoes_ordem_e_determinismo[v2]" time="0.357" /><testcase classname="tests.test_modelo" name="test_limiar_exatamente_no_limite[0.5-1]" time="0.002" /><testcase classname="tests.test_modelo" name="test_limiar_exatamente_no_limite[0.50000001-0]" time="0.001" /><testcase classname="tests.test_modelo" name="test_limiar_exatamente_no_limite[0.49999999-1]" time="0.001" /><testcase classname="tests.test_modelo" name="test_modelo_rejeita_valores_invalidos[nan]" time="0.000" /><testcase classname="tests.test_modelo" name="test_modelo_rejeita_valores_invalidos[inf]" time="0.000" /><testcase classname="tests.test_modelo" name="test_modelo_rejeita_valores_invalidos[-inf]" time="0.000" /><testcase classname="tests.test_modelo" name="test_modelo_rejeita_valores_invalidos[invalido]" time="0.001" /><testcase classname="tests.test_modelo" name="test_modelo_rejeita_forma_invalida[forma0]" time="0.001" /><testcase classname="tests.test_modelo" name="test_modelo_rejeita_forma_invalida[forma1]" time="0.001" /><testcase classname="tests.test_modelo" name="test_modelo_rejeita_forma_invalida[forma2]" time="0.000" /><testcase classname="tests.test_modelo" name="test_modelo_rejeita_forma_invalida[forma3]" time="0.000" /><testcase classname="tests.test_modelo" name="test_registro_canonico_equivale_ao_lote[v1]" time="0.058" /><testcase classname="tests.test_modelo" name="test_registro_canonico_equivale_ao_lote[v2]" time="0.066" /><testcase classname="tests.test_modelo" name="test_registro_rejeita_cardinalidade_ou_tipo_invalido[remover]" time="0.055" /><testcase classname="tests.test_modelo" name="test_registro_rejeita_cardinalidade_ou_tipo_invalido[adicionar]" time="0.053" /><testcase classname="tests.test_modelo" name="test_registro_rejeita_cardinalidade_ou_tipo_invalido[tipo]" time="0.060" /><testcase classname="tests.test_modelo" name="test_registro_rejeita_chave_substituida" time="0.066"><failure message="Failed: DID NOT RAISE ValueError">features_reais =       temp_media_6h  temp_max_24h  ...  operador_senior  turno
+0         73.416667         72.76  ...              0.0...2  ...              0.0    3.0
+4199      72.705000         74.77  ...              0.0    3.0
+
+[4200 rows x 13 columns]
+
+    @pytest.mark.defeito
+    def test_registro_rejeita_chave_substituida(features_reais: pd.DataFrame) -&gt; None:
+        """Ter 13 valores não basta quando uma feature obrigatória está ausente."""
+        registro = features_reais.iloc[0].to_dict()
+        registro["campo_desconhecido"] = registro.pop("turno")
+&gt;       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_modelo.py:103: Failed</failure></testcase><testcase classname="tests.test_modelo" name="test_registro_independe_da_ordem_de_insercao[v1]" time="0.423"><failure message="AssertionError: 22/100 decisões mudaram só pela ordem das chaves&#10;assert 22 == 0">features_reais =       temp_media_6h  temp_max_24h  ...  operador_senior  turno
+0         73.416667         72.76  ...              0.0...2  ...              0.0    3.0
+4199      72.705000         74.77  ...              0.0    3.0
+
+[4200 rows x 13 columns]
+versao = 'v1'
+
+    @pytest.mark.defeito
+    @pytest.mark.parametrize("versao", ["v1", "v2"])
+    def test_registro_independe_da_ordem_de_insercao(
+        features_reais: pd.DataFrame,
+        versao: str,
+    ) -&gt; None:
+        """Os mesmos nomes e valores devem produzir decisões idênticas."""
+        modelo = sn.modelo.carregar(versao)
+        amostra = features_reais.iloc[:100]
+        canonicas = modelo.prever(amostra)
+        invertidas = [
+            modelo.prever_registro(dict(reversed(list(linha.items()))))
+            for linha in amostra.to_dict(orient="records")
+        ]
+        mudancas = int(np.sum(canonicas != invertidas))
+&gt;       assert mudancas == 0, f"{mudancas}/100 decisões mudaram só pela ordem das chaves"
+E       AssertionError: 22/100 decisões mudaram só pela ordem das chaves
+E       assert 22 == 0
+
+tests/test_modelo.py:122: AssertionError</failure></testcase><testcase classname="tests.test_modelo" name="test_registro_independe_da_ordem_de_insercao[v2]" time="0.652"><failure message="AssertionError: 12/100 decisões mudaram só pela ordem das chaves&#10;assert 12 == 0">features_reais =       temp_media_6h  temp_max_24h  ...  operador_senior  turno
+0         73.416667         72.76  ...              0.0...2  ...              0.0    3.0
+4199      72.705000         74.77  ...              0.0    3.0
+
+[4200 rows x 13 columns]
+versao = 'v2'
+
+    @pytest.mark.defeito
+    @pytest.mark.parametrize("versao", ["v1", "v2"])
+    def test_registro_independe_da_ordem_de_insercao(
+        features_reais: pd.DataFrame,
+        versao: str,
+    ) -&gt; None:
+        """Os mesmos nomes e valores devem produzir decisões idênticas."""
+        modelo = sn.modelo.carregar(versao)
+        amostra = features_reais.iloc[:100]
+        canonicas = modelo.prever(amostra)
+        invertidas = [
+            modelo.prever_registro(dict(reversed(list(linha.items()))))
+            for linha in amostra.to_dict(orient="records")
+        ]
+        mudancas = int(np.sum(canonicas != invertidas))
+&gt;       assert mudancas == 0, f"{mudancas}/100 decisões mudaram só pela ordem das chaves"
+E       AssertionError: 12/100 decisões mudaram só pela ordem das chaves
+E       assert 12 == 0
+
+tests/test_modelo.py:122: AssertionError</failure></testcase><testcase classname="tests.test_modelo" name="test_dataframe_exige_features_e_aceita_coluna_adicional" time="0.141" /><testcase classname="tests.test_modelo" name="test_versao_inexistente_e_rejeitada" time="0.000" /><testcase classname="tests.test_pipeline" name="test_pipeline_preserva_identidade_alvo_e_decisao[v1]" time="0.179" /><testcase classname="tests.test_pipeline" name="test_pipeline_preserva_identidade_alvo_e_decisao[v2]" time="0.244" /><testcase classname="tests.test_pipeline" name="test_pipeline_limiar_inclusivo_e_sem_alvo" time="0.029" /><testcase classname="tests.test_pipeline" name="test_extremos_operacionais_validos_sao_processados[45-1.2-3-12-1650-6]" time="0.016" /><testcase classname="tests.test_pipeline" name="test_extremos_operacionais_validos_sao_processados[95-8-4.5-30-1800-180]" time="0.017" /><testcase classname="tests.test_pipeline" name="test_leitura_fisicamente_invalida_nao_gera_decisao[temperatura_c--274.0]" time="0.018"><failure message="AssertionError: temperatura_c=-274.0 produziu 1 decisão sem rejeição&#10;assert False&#10; +  where False =   id_maquina  timestamp  probabilidade  predicao\n0        M01 2026-06-01       0.069965         0.empty">lote_controlado =              timestamp id_maquina  ...     rpm horas_operacao
+0  2026-06-01 00:00:00        M01  ...  1700.0          ...  M01  ...  1700.0          100.0
+47 2026-06-02 23:00:00        M01  ...  1700.0          100.0
+
+[48 rows x 12 columns]
+campo = 'temperatura_c', valor = -274.0
+
+    @pytest.mark.rapido
+    @pytest.mark.defeito
+    @pytest.mark.parametrize(
+        "campo,valor",
+        [
+            ("temperatura_c", -274.0),
+            ("vibracao_rms", -1.0),
+            ("idade_equipamento_meses", -1),
+        ],
+    )
+    def test_leitura_fisicamente_invalida_nao_gera_decisao(
+        lote_controlado: pd.DataFrame,
+        campo: str,
+        valor: float,
+    ) -&gt; None:
+        """Temperatura abaixo do zero absoluto, RMS e idade negativos são inválidos."""
+        entrada = lote_controlado.iloc[:1].assign(**{campo: valor})
+        try:
+            saida = sn.pipeline.executar(entrada)
+        except (ValueError, TypeError):
+            return
+&gt;       assert saida.empty, f"{campo}={valor} produziu {len(saida)} decisão sem rejeição"
+E       AssertionError: temperatura_c=-274.0 produziu 1 decisão sem rejeição
+E       assert False
+E        +  where False =   id_maquina  timestamp  probabilidade  predicao\n0        M01 2026-06-01       0.069965         0.empty
+
+tests/test_pipeline.py:103: AssertionError</failure></testcase><testcase classname="tests.test_pipeline" name="test_leitura_fisicamente_invalida_nao_gera_decisao[vibracao_rms--1.0]" time="0.018"><failure message="AssertionError: vibracao_rms=-1.0 produziu 1 decisão sem rejeição&#10;assert False&#10; +  where False =   id_maquina  timestamp  probabilidade  predicao\n0        M01 2026-06-01       0.082299         0.empty">lote_controlado =              timestamp id_maquina  ...     rpm horas_operacao
+0  2026-06-01 00:00:00        M01  ...  1700.0          ...  M01  ...  1700.0          100.0
+47 2026-06-02 23:00:00        M01  ...  1700.0          100.0
+
+[48 rows x 12 columns]
+campo = 'vibracao_rms', valor = -1.0
+
+    @pytest.mark.rapido
+    @pytest.mark.defeito
+    @pytest.mark.parametrize(
+        "campo,valor",
+        [
+            ("temperatura_c", -274.0),
+            ("vibracao_rms", -1.0),
+            ("idade_equipamento_meses", -1),
+        ],
+    )
+    def test_leitura_fisicamente_invalida_nao_gera_decisao(
+        lote_controlado: pd.DataFrame,
+        campo: str,
+        valor: float,
+    ) -&gt; None:
+        """Temperatura abaixo do zero absoluto, RMS e idade negativos são inválidos."""
+        entrada = lote_controlado.iloc[:1].assign(**{campo: valor})
+        try:
+            saida = sn.pipeline.executar(entrada)
+        except (ValueError, TypeError):
+            return
+&gt;       assert saida.empty, f"{campo}={valor} produziu {len(saida)} decisão sem rejeição"
+E       AssertionError: vibracao_rms=-1.0 produziu 1 decisão sem rejeição
+E       assert False
+E        +  where False =   id_maquina  timestamp  probabilidade  predicao\n0        M01 2026-06-01       0.082299         0.empty
+
+tests/test_pipeline.py:103: AssertionError</failure></testcase><testcase classname="tests.test_pipeline" name="test_leitura_fisicamente_invalida_nao_gera_decisao[idade_equipamento_meses--1]" time="0.018"><failure message="AssertionError: idade_equipamento_meses=-1 produziu 1 decisão sem rejeição&#10;assert False&#10; +  where False =   id_maquina  timestamp  probabilidade  predicao\n0        M01 2026-06-01       0.034624         0.empty">lote_controlado =              timestamp id_maquina  ...     rpm horas_operacao
+0  2026-06-01 00:00:00        M01  ...  1700.0          ...  M01  ...  1700.0          100.0
+47 2026-06-02 23:00:00        M01  ...  1700.0          100.0
+
+[48 rows x 12 columns]
+campo = 'idade_equipamento_meses', valor = -1
+
+    @pytest.mark.rapido
+    @pytest.mark.defeito
+    @pytest.mark.parametrize(
+        "campo,valor",
+        [
+            ("temperatura_c", -274.0),
+            ("vibracao_rms", -1.0),
+            ("idade_equipamento_meses", -1),
+        ],
+    )
+    def test_leitura_fisicamente_invalida_nao_gera_decisao(
+        lote_controlado: pd.DataFrame,
+        campo: str,
+        valor: float,
+    ) -&gt; None:
+        """Temperatura abaixo do zero absoluto, RMS e idade negativos são inválidos."""
+        entrada = lote_controlado.iloc[:1].assign(**{campo: valor})
+        try:
+            saida = sn.pipeline.executar(entrada)
+        except (ValueError, TypeError):
+            return
+&gt;       assert saida.empty, f"{campo}={valor} produziu {len(saida)} decisão sem rejeição"
+E       AssertionError: idade_equipamento_meses=-1 produziu 1 decisão sem rejeição
+E       assert False
+E        +  where False =   id_maquina  timestamp  probabilidade  predicao\n0        M01 2026-06-01       0.034624         0.empty
+
+tests/test_pipeline.py:103: AssertionError</failure></testcase><testcase classname="tests.test_pipeline" name="test_lote_constante_com_valores_repetidos_e_preservado" time="0.015" /><testcase classname="tests.test_preprocessamento" name="test_limpeza_preserva_entrada_e_normaliza_rotulos" time="0.005" /><testcase classname="tests.test_preprocessamento" name="test_limpeza_e_idempotente" time="0.038" /><testcase classname="tests.test_preprocessamento" name="test_motor_parado_e_descartado_com_ordem_preservada" time="0.005" /><testcase classname="tests.test_preprocessamento" name="test_dropout_nao_se_converte_em_vibracao_fisicamente_invalida" time="0.005"><failure message="AssertionError: Dropout preenchido com 0.0 mm/s&#10;assert 1.2 &lt;= np.float64(0.0)">lote_controlado =              timestamp id_maquina  ...     rpm horas_operacao
+0  2026-06-01 00:00:00        M01  ...  1700.0          ...  M01  ...  1700.0          100.0
+47 2026-06-02 23:00:00        M01  ...  1700.0          100.0
+
+[48 rows x 12 columns]
+
+    @pytest.mark.defeito
+    def test_dropout_nao_se_converte_em_vibracao_fisicamente_invalida(
+        lote_controlado: pd.DataFrame,
+    ) -&gt; None:
+        """Um preenchimento numérico deve respeitar a faixa de 1,2–8 mm/s."""
+        lote_controlado.loc[0, "vibracao_rms"] = np.nan
+        obtido = sn.preprocessamento.limpar(lote_controlado).loc[0, "vibracao_rms"]
+&gt;       assert 1.2 &lt;= obtido &lt;= 8.0, f"Dropout preenchido com {obtido} mm/s"
+E       AssertionError: Dropout preenchido com 0.0 mm/s
+E       assert 1.2 &lt;= np.float64(0.0)
+
+tests/test_preprocessamento.py:52: AssertionError</failure></testcase><testcase classname="tests.test_preprocessamento" name="test_pressao_equivalente_bar_psi_produz_mesma_feature" time="0.021"><failure message="AssertionError: &#10;Not equal to tolerance rtol=1e-07, atol=1e-10&#10;&#10;Mismatched elements: 48 / 48 (100%)&#10;First 5 mismatches are at indices:&#10; [0]: 50.7633 (ACTUAL), 3.5 (DESIRED)&#10; [1]: 50.7633 (ACTUAL), 3.5 (DESIRED)&#10; [2]: 50.7633 (ACTUAL), 3.5 (DESIRED)&#10; [3]: 50.7633 (ACTUAL), 3.5 (DESIRED)&#10; [4]: 50.7633 (ACTUAL), 3.5 (DESIRED)&#10;Max absolute difference among violations: 47.2633&#10;Max relative difference among violations: 13.5038&#10; ACTUAL: array([50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633,&#10;       50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633,&#10;       50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633,...&#10; DESIRED: array([3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5,&#10;       3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5,&#10;       3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5,&#10;       3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5])">lote_controlado =              timestamp id_maquina  ...     rpm horas_operacao
+0  2026-06-01 00:00:00        M01  ...  1700.0          ...  M01  ...  1700.0          100.0
+47 2026-06-02 23:00:00        M01  ...  1700.0          100.0
+
+[48 rows x 12 columns]
+
+    @pytest.mark.defeito
+    def test_pressao_equivalente_bar_psi_produz_mesma_feature(
+        lote_controlado: pd.DataFrame,
+    ) -&gt; None:
+        """Representações da mesma pressão não podem alterar a grandeza consumida."""
+        em_psi = lote_controlado.copy()
+        em_psi["pressao"] *= 14.5038
+        em_psi["unidade_pressao"] = "psi"
+        em_bar = sn.features.construir(sn.preprocessamento.limpar(lote_controlado))
+        convertido = sn.features.construir(sn.preprocessamento.limpar(em_psi))
+&gt;       np.testing.assert_allclose(convertido["pressao"], em_bar["pressao"], atol=1e-10)
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-07, atol=1e-10
+E       
+E       Mismatched elements: 48 / 48 (100%)
+E       First 5 mismatches are at indices:
+E        [0]: 50.7633 (ACTUAL), 3.5 (DESIRED)
+E        [1]: 50.7633 (ACTUAL), 3.5 (DESIRED)
+E        [2]: 50.7633 (ACTUAL), 3.5 (DESIRED)
+E        [3]: 50.7633 (ACTUAL), 3.5 (DESIRED)
+E        [4]: 50.7633 (ACTUAL), 3.5 (DESIRED)
+E       Max absolute difference among violations: 47.2633
+E       Max relative difference among violations: 13.5038
+E        ACTUAL: array([50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633,
+E              50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633,
+E              50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633, 50.7633,...
+E        DESIRED: array([3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5,
+E              3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5,
+E              3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5,
+E              3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5])
+
+tests/test_preprocessamento.py:65: AssertionError</failure></testcase><testcase classname="tests.test_preprocessamento" name="test_tipo_nao_convertivel_e_rejeitado[timestamp]" time="0.003" /><testcase classname="tests.test_preprocessamento" name="test_tipo_nao_convertivel_e_rejeitado[turno]" time="0.004" /><testcase classname="tests.test_preprocessamento" name="test_tipo_nao_convertivel_e_rejeitado[idade_equipamento_meses]" time="0.003" /></testsuite></testsuites>

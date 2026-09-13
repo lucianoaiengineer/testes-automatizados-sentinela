@@ -1,0 +1,36 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra --strict-markers --capture=sys"
+markers = [
+  "rapido: contratos e casos controlados",
+  "lento: análises sobre os conjuntos completos",
+  "defeito: contrato cuja violação foi investigada; permanece como falha normal",
+]
+
+[tool.ruff]
+target-version = "py314"
+line-length = 88
+extend-exclude = [".venv", ".pacotes", ".temporarios", "evidencias", "resultados"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "D100", "D101", "D102", "D103"]
+
+[tool.mypy]
+python_version = "3.14"
+files = ["src", "scripts", "tests"]
+mypy_path = "src"
+disallow_untyped_defs = true
+check_untyped_defs = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = ["sentinela.*", "scipy.*"]
+ignore_missing_imports = true
+
+[tool.coverage.run]
+branch = true
+source = ["suite_sentinela"]
+
+[tool.coverage.report]
+show_missing = true

@@ -1,0 +1,12 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.1.1, pluggy-1.6.0 -- /mnt/c/Users/Luciano/Desktop/Projetos/puc/testes-automatizados-sentinela/.venv/bin/python
+rootdir: /mnt/c/Users/Luciano/Desktop/Projetos/puc/testes-automatizados-sentinela
+configfile: pyproject.toml
+plugins: cov-7.1.0
+collecting ... collected 3 items
+
+test_exemplo.py::test_artefatos_batem_com_o_manifest PASSED              [ 33%]
+test_exemplo.py::test_features_preservam_linhas_e_ordem_das_colunas PASSED [ 66%]
+test_exemplo.py::test_pipeline_devolve_decisao_binaria_para_cada_leitura PASSED [100%]
+
+============================== 3 passed in 4.66s ===============================
